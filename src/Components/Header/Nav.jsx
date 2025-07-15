@@ -31,35 +31,30 @@ export default function Nav({ setMobileToggle }) {
         <DropDown>
           <ul>
             <li>
-              <Link to="/contact" onClick={() => setMobileToggle(false)}>
-                Google AdSpy
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" onClick={() => setMobileToggle(false)}>
+              <Link to="/facebook-about" onClick={() => setMobileToggle(false)}>
                 Facebook AdSpy
               </Link>
             </li>
             <li>
-              <Link to="/team" onClick={() => setMobileToggle(false)}>
+              <Link
+                to="/instagram-about"
+                onClick={() => setMobileToggle(false)}
+              >
                 Instagram AdSpy
               </Link>
             </li>
             <li>
-              <Link
-                to="/team/team-details"
-                onClick={() => setMobileToggle(false)}
-              >
+              <Link to="/tiktok-about" onClick={() => setMobileToggle(false)}>
                 TikTok AdSpy
               </Link>
             </li>
             <li>
-              <Link to="/pricing" onClick={() => setMobileToggle(false)}>
+              <Link to="/youtube-about" onClick={() => setMobileToggle(false)}>
                 Youtube AdSpy
               </Link>
             </li>
             <li>
-              <Link to="/faq" onClick={() => setMobileToggle(false)}>
+              <Link to="/x-about" onClick={() => setMobileToggle(false)}>
                 Twitter AdSpy
               </Link>
             </li>
@@ -73,11 +68,6 @@ export default function Nav({ setMobileToggle }) {
         </Link>
         <DropDown>
           <ul>
-            <li>
-              <Link to="/contact" onClick={() => setMobileToggle(false)}>
-                Google Page
-              </Link>
-            </li>
             <li>
               <Link to="/about" onClick={() => setMobileToggle(false)}>
                 Facebook Page
