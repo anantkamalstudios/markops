@@ -66,14 +66,14 @@ const Home = () => {
       <Testimonial></Testimonial>
       <Feature2></Feature2>
       <Pricing1></Pricing1>
-      <Cta1
+      {/* <Cta1
         subtitle="Our App"
         title="Download our app and start your free trail to get started today!"
         content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised"
         btnurl1="https://play.google.com/store"
         btnurl2="https://www.apple.com/store"
         img="/assets/images/cta/ctaThumb1_1.png"
-      ></Cta1>
+      ></Cta1> */}
       <Blog1></Blog1>
     </div>
   );

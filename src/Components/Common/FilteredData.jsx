@@ -3,124 +3,124 @@ import AdDetailModal from "../Details/AdDetailModal";
 import GridView from "../Details/GridView";
 import ListView from "../Details/ListView";
 
+const dummyAds = [
+  {
+    id: 1,
+    name: "Giro***esign",
+    title: "Casco Helios Sphericalsss",
+    avatar:
+      "https://sp2cdn-logo-global.zingfront.com/sp_opera/e9a2c83e5aa78859f10daa95fcdbab04.png",
+    image:
+      "https://sp.dataideaglobal.com/sp_opera/f1f3074c6b56a67dee6814a240b00d89.jpg",
+    impression: "10K",
+    duration: "1",
+    popularity: "500",
+    heading: "Acquista Ciclismo su Giro Sport Design",
+    desc: "Attrezzatura premium per ciclismo e MTB, creata perportare la tua esperienza su due ruote al livello successivo",
+    dateRange: "2025-07-15 ~ 2025-07-15",
+    network: "Facebook",
+    country: "Nashik",
+    language: "Italian",
+    size: "1200x628",
+    disclaimer: "Sample disclaimer text",
+    similar: [
+      "https://via.placeholder.com/80",
+      "https://via.placeholder.com/81",
+    ],
+  },
+  {
+    id: 2,
+    name: "Giro***esign",
+    title: "Casco Helios Spherical",
+    avatar:
+      "https://sp2cdn-logo-global.zingfront.com/sp_opera/e9a2c83e5aa78859f10daa95fcdbab04.png",
+    image:
+      "https://sp.dataideaglobal.com/sp_opera/8b3b224877c32ee238405ca7f217a969.jpg",
+    impression: "10K",
+    duration: "1",
+    popularity: "5000",
+    heading: "Acquista Ciclismo su Giro Sport Design",
+    desc: "Attrezzatura premium per ciclismo e MTB, creata perportare la tua esperienza su due ruote al livello successivo",
+    dateRange: "2025-07-15 ~ 2025-07-15",
+    network: "Facebook",
+    country: "Pune",
+    language: "Italian",
+    size: "1200x628",
+    disclaimer: "Sample disclaimer text",
+    similar: [
+      "https://via.placeholder.com/80",
+      "https://via.placeholder.com/81",
+    ],
+  },
+  {
+    id: 3,
+    name: "Giro***esign",
+    title: "Casco Helios Sphericalzzzz",
+    avatar:
+      "https://sp2cdn-logo-global.zingfront.com/sp_opera/e9a2c83e5aa78859f10daa95fcdbab04.png",
+    image:
+      "https://sp.dataideaglobal.com/sp_opera/f56823c9a19c620e0164d05a1af7f26f.jpg",
+    impression: "10K",
+    duration: "1",
+    popularity: "5",
+    heading: "Acquista Ciclismo su Giro Sport Design",
+    desc: "Attrezzatura premium per ciclismo e MTB, creata perportare la tua esperienza su due ruote al livello successivo",
+    dateRange: "2025-07-15 ~ 2025-07-15",
+    network: "Facebook",
+    country: "Mumbai",
+    language: "Italian",
+    size: "1200x628",
+    disclaimer: "Sample disclaimer text",
+    similar: [
+      "https://via.placeholder.com/80",
+      "https://via.placeholder.com/81",
+    ],
+  },
+];
+
+const ads = [
+  {
+    id: 1,
+    image:
+      "https://sp.dataideaglobal.com/sp_opera/f1f3074c6b56a67dee6814a240b00d89.jpg",
+    logo: "https://sp2cdn-logo-global.zingfront.com/sp_opera/e9a2c83e5aa78859f10daa95fcdbab04.png",
+    advertiser: "Giro***esign",
+    domain: "gi***om",
+    impression: "10K",
+    popularity: 50,
+    engagement: "N/A",
+    duration: 1,
+    dateRange: "2025-07-15 ~ 2025-07-15",
+  },
+  {
+    id: 2,
+    image:
+      "https://sp.dataideaglobal.com/sp_opera/f1f3074c6b56a67dee6814a240b00d89.jpg",
+    logo: "https://sp2cdn-logo-global.zingfront.com/sp_opera/e9a2c83e5aa78859f10daa95fcdbab04.png",
+    advertiser: "Giro***esign",
+    domain: "gi***om",
+    impression: "10K",
+    popularity: 500,
+    engagement: "N/A",
+    duration: 1,
+    dateRange: "2025-07-15 ~ 2025-07-15",
+  },
+  {
+    id: 3,
+    image:
+      "https://sp.dataideaglobal.com/sp_opera/f1f3074c6b56a67dee6814a240b00d89.jpg",
+    logo: "https://sp2cdn-logo-global.zingfront.com/sp_opera/e9a2c83e5aa78859f10daa95fcdbab04.png",
+    advertiser: "Giro***esign",
+    domain: "gi***om",
+    impression: "10K",
+    popularity: 5000,
+    engagement: "N/A",
+    duration: 1,
+    dateRange: "2025-07-15 ~ 2025-07-15",
+  },
+];
+
 export default function FilteredData() {
-  const dummyAds = [
-    {
-      id: 1,
-      name: "Giro***esign",
-      title: "Casco Helios Sphericalsss",
-      avatar:
-        "https://sp2cdn-logo-global.zingfront.com/sp_opera/e9a2c83e5aa78859f10daa95fcdbab04.png",
-      image:
-        "https://sp.dataideaglobal.com/sp_opera/f1f3074c6b56a67dee6814a240b00d89.jpg",
-      impression: "10K",
-      duration: "1",
-      popularity: "500",
-      heading: "Acquista Ciclismo su Giro Sport Design",
-      desc: "Attrezzatura premium per ciclismo e MTB, creata perportare la tua esperienza su due ruote al livello successivo",
-      dateRange: "2025-07-15 ~ 2025-07-15",
-      network: "Facebook",
-      country: "Nashik",
-      language: "Italian",
-      size: "1200x628",
-      disclaimer: "Sample disclaimer text",
-      similar: [
-        "https://via.placeholder.com/80",
-        "https://via.placeholder.com/81",
-      ],
-    },
-    {
-      id: 2,
-      name: "Giro***esign",
-      title: "Casco Helios Spherical",
-      avatar:
-        "https://sp2cdn-logo-global.zingfront.com/sp_opera/e9a2c83e5aa78859f10daa95fcdbab04.png",
-      image:
-        "https://sp.dataideaglobal.com/sp_opera/8b3b224877c32ee238405ca7f217a969.jpg",
-      impression: "10K",
-      duration: "1",
-      popularity: "5000",
-      heading: "Acquista Ciclismo su Giro Sport Design",
-      desc: "Attrezzatura premium per ciclismo e MTB, creata perportare la tua esperienza su due ruote al livello successivo",
-      dateRange: "2025-07-15 ~ 2025-07-15",
-      network: "Facebook",
-      country: "Pune",
-      language: "Italian",
-      size: "1200x628",
-      disclaimer: "Sample disclaimer text",
-      similar: [
-        "https://via.placeholder.com/80",
-        "https://via.placeholder.com/81",
-      ],
-    },
-    {
-      id: 3,
-      name: "Giro***esign",
-      title: "Casco Helios Sphericalzzzz",
-      avatar:
-        "https://sp2cdn-logo-global.zingfront.com/sp_opera/e9a2c83e5aa78859f10daa95fcdbab04.png",
-      image:
-        "https://sp.dataideaglobal.com/sp_opera/f56823c9a19c620e0164d05a1af7f26f.jpg",
-      impression: "10K",
-      duration: "1",
-      popularity: "5",
-      heading: "Acquista Ciclismo su Giro Sport Design",
-      desc: "Attrezzatura premium per ciclismo e MTB, creata perportare la tua esperienza su due ruote al livello successivo",
-      dateRange: "2025-07-15 ~ 2025-07-15",
-      network: "Facebook",
-      country: "Mumbai",
-      language: "Italian",
-      size: "1200x628",
-      disclaimer: "Sample disclaimer text",
-      similar: [
-        "https://via.placeholder.com/80",
-        "https://via.placeholder.com/81",
-      ],
-    },
-  ];
-
-  const ads = [
-    {
-      id: 1,
-      image:
-        "https://sp.dataideaglobal.com/sp_opera/f1f3074c6b56a67dee6814a240b00d89.jpg",
-      logo: "https://sp2cdn-logo-global.zingfront.com/sp_opera/e9a2c83e5aa78859f10daa95fcdbab04.png",
-      advertiser: "Giro***esign",
-      domain: "gi***om",
-      impression: "10K",
-      popularity: 50,
-      engagement: "N/A",
-      duration: 1,
-      dateRange: "2025-07-15 ~ 2025-07-15",
-    },
-    {
-      id: 2,
-      image:
-        "https://sp.dataideaglobal.com/sp_opera/f1f3074c6b56a67dee6814a240b00d89.jpg",
-      logo: "https://sp2cdn-logo-global.zingfront.com/sp_opera/e9a2c83e5aa78859f10daa95fcdbab04.png",
-      advertiser: "Giro***esign",
-      domain: "gi***om",
-      impression: "10K",
-      popularity: 500,
-      engagement: "N/A",
-      duration: 1,
-      dateRange: "2025-07-15 ~ 2025-07-15",
-    },
-    {
-      id: 3,
-      image:
-        "https://sp.dataideaglobal.com/sp_opera/f1f3074c6b56a67dee6814a240b00d89.jpg",
-      logo: "https://sp2cdn-logo-global.zingfront.com/sp_opera/e9a2c83e5aa78859f10daa95fcdbab04.png",
-      advertiser: "Giro***esign",
-      domain: "gi***om",
-      impression: "10K",
-      popularity: 5000,
-      engagement: "N/A",
-      duration: 1,
-      dateRange: "2025-07-15 ~ 2025-07-15",
-    },
-  ];
-
   const [viewMode, setViewMode] = useState("industry");
   const [sortOption, setSortOption] = useState("latest");
   const [dedupOption, setDedupOption] = useState("strict");

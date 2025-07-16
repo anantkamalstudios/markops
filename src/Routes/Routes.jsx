@@ -26,23 +26,39 @@ import InstagramAboutPage from "../Pages/InstagramAboutPage";
 import TikTokAboutUs from "../Pages/TikTokAboutUs";
 import YoutubeAboutUs from "../Pages/YoutubeAboutUs";
 import XAboutUs from "../Pages/XAboutUs";
+import FacebookPage from "../Pages/FacebookPage";
+import TermCondition from "../Components/Legals/TermCondition";
+import Privacy from "../Components/Legals/Privacy";
+import Refund from "../Components/Legals/Refund";
+import LinkedinPage from "../Pages/LinkedinPage";
+import YoutubePage from "../Pages/YoutubePage";
+import GooglePage from "../Pages/GooglePage";
+import InstagramPage from "../Pages/InstagramPage";
+import XPage from "../Pages/XPage";
+import GoogleAboutUs from "../Pages/GoogleAboutUs";
+import LinkedinAboutUs from "../Pages/LinkedinAboutUs";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout4></Layout4>,
     children: [
+      // AdSpy
       {
         path: "/facebook-about",
         element: <FacebookAboutPage></FacebookAboutPage>,
       },
       {
-        path: "/instagram-about",
-        element: <InstagramAboutPage></InstagramAboutPage>,
+        path: "/google-about",
+        element: <GoogleAboutUs></GoogleAboutUs>,
       },
       {
-        path: "/tiktok-about",
-        element: <TikTokAboutUs></TikTokAboutUs>,
+        path: "/linkedin-about",
+        element: <LinkedinAboutUs></LinkedinAboutUs>,
+      },
+      {
+        path: "/instagram-about",
+        element: <InstagramAboutPage></InstagramAboutPage>,
       },
       {
         path: "/youtube-about",
@@ -51,6 +67,31 @@ export const router = createBrowserRouter([
       {
         path: "/x-about",
         element: <XAboutUs></XAboutUs>,
+      },
+      // Features
+      {
+        path: "/facebook-page",
+        element: <FacebookPage></FacebookPage>,
+      },
+      {
+        path: "/google-page",
+        element: <GooglePage></GooglePage>,
+      },
+      {
+        path: "/instagram-page",
+        element: <InstagramPage></InstagramPage>,
+      },
+      {
+        path: "/linkedin-page",
+        element: <LinkedinPage></LinkedinPage>,
+      },
+      {
+        path: "/youtube-page",
+        element: <YoutubePage></YoutubePage>,
+      },
+      {
+        path: "/x-page",
+        element: <XPage></XPage>,
       },
       {
         path: "/service",
@@ -87,6 +128,18 @@ export const router = createBrowserRouter([
       {
         path: "/faq",
         element: <FaqPage></FaqPage>,
+      },
+      {
+        path: "/terms-conditions",
+        element: <TermCondition></TermCondition>,
+      },
+      {
+        path: "/privacy",
+        element: <Privacy></Privacy>,
+      },
+      {
+        path: "/refund",
+        element: <Refund></Refund>,
       },
       {
         path: "/blog",

@@ -10,7 +10,7 @@ import Testimonial4 from "../Components/Testimonial/Testimonial4";
 const AboutPage = () => {
   return (
     <div>
-      {/* <BreadCumb
+      <BreadCumb
         bgimg="/assets/images/bg/breadcumgBg.png"
         Title="About Us"
       ></BreadCumb>
@@ -44,9 +44,7 @@ const AboutPage = () => {
       ></Choose2>
       <HowWork></HowWork>
       <Choose4></Choose4>
-      <Testimonial4></Testimonial4> */}
-
-      <FilterSection />
+      <Testimonial4></Testimonial4>
     </div>
   );
 };

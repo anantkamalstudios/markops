@@ -26,8 +26,8 @@ const Faq1 = () => {
   const FaqContent = {
     Content:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly",
-    img1: "/assets/images/faq/faq_first.png",
-    img2: "/assets/images/faq/faqThumb1_1.png",
+    img1: "/assets/images/faq/faq_791_679.png",
+    img2: "/assets/images/faq/faq_236_474.png",
   };
 
   return (

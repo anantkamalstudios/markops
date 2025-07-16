@@ -105,26 +105,23 @@ const Footer = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h3> Utility Pages </h3>
+                  <h3> Legals Pages </h3>
                 </div>
                 <ul className="list-area">
                   <li>
-                    <Link to="/project">Integrations</Link>
+                    <Link to="/faq">FAQs</Link>
                   </li>
                   <li>
-                    <Link to="/blog">Blog</Link>
+                    <Link to="/terms-conditions">Terms-Condition</Link>
                   </li>
                   <li>
-                    <Link to="/contact">Contact Us</Link>
+                    <Link to="/privacy">Privacy</Link>
                   </li>
                   <li>
-                    <Link to="/pricing">Pricing</Link>
+                    <Link to="/refund">Refund</Link>
                   </li>
                   <li>
-                    <Link to="/project/project-details">Project details</Link>
-                  </li>
-                  <li>
-                    <Link to="/team">Our Team</Link>
+                    <Link to="/pricing">pricing</Link>
                   </li>
                 </ul>
               </div>

@@ -29,7 +29,6 @@ export default function FilterSection() {
     dynamic: false,
     facebook: false,
     instagram: false,
-    admob: false,
     youtube: false,
     tiktok: false,
     twitter: false,
@@ -124,21 +123,19 @@ export default function FilterSection() {
 
             {/* Search */}
             <div className="col-md-6">
-              <form className="d-flex">
-                <div className="input-group input-group-sm">
-                  <input
-                    type="search"
-                    className="form-control"
-                    placeholder="Search"
-                    name="query"
-                    value={formState.query}
-                    onChange={handleChange}
-                  />
-                  <button className="btn btn-primary" type="submit">
-                    Search
-                  </button>
-                </div>
-              </form>
+              <div className="input-group input-group-sm">
+                <input
+                  type="search"
+                  className="form-control"
+                  placeholder="Search"
+                  name="query"
+                  value={formState.query}
+                  onChange={handleChange}
+                />
+                <button className="btn btn-primary" type="submit">
+                  Search
+                </button>
+              </div>
             </div>
           </div>
 

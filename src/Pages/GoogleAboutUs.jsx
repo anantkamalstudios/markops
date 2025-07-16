@@ -1,7 +1,7 @@
 import React from "react";
 import FilterSection from "../Components/Common/FilterSection";
 
-const XAboutUs = () => {
+const GoogleAboutUs = () => {
   return (
     <div>
       <FilterSection />
@@ -9,4 +9,4 @@ const XAboutUs = () => {
   );
 };
 
-export default XAboutUs;
+export default GoogleAboutUs;
