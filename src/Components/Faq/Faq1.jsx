@@ -1,83 +1,68 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import SectionTitle from "../Common/SectionTitle";
-import { useState } from "react";
-import { useEffect } from "react";
-import data from "../../Data/faq1.json";
 
-const Faq1 = () => {
+const Faq1 = ({ faqData }) => {
   const accordionContentRef = useRef(null);
-  const [openItemIndex, setOpenItemIndex] = useState(-1);
-  const [firstItemOpen, setFirstItemOpen] = useState(true);
+  const [openItemIndex, setOpenItemIndex] = useState(0);
+
+  const mainContent = faqData?.find((item) => item.type === "main");
+  const faqItems = faqData?.filter((item) => item.type === "point");
 
   const handleItemClick = (index) => {
-    if (index === openItemIndex) {
-      setOpenItemIndex(-1);
-    } else {
-      setOpenItemIndex(index);
-    }
+    setOpenItemIndex(index === openItemIndex ? -1 : index);
   };
-  useEffect(() => {
-    if (firstItemOpen) {
-      setOpenItemIndex(0);
-      setFirstItemOpen(false);
-    }
-  }, [firstItemOpen]);
 
-  const FaqContent = {
-    Content:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly",
-    img1: "/assets/images/faq/faq_791_679.png",
-    img2: "/assets/images/faq/faq_236_474.png",
-  };
+  const smallImage = `https://teal-sparrow-187679.hostingersite.com/public/${mainContent.image1}`;
+  const largeImage = `https://teal-sparrow-187679.hostingersite.com/public/${mainContent.image2}`;
 
   return (
     <section className="faq-section section-padding fix">
       <div className="container">
         <div className="faq-wrapper style1">
           <div className="row gy-5 gy-xl-0 gx-60 d-flex align-items-start">
+            {/* Left Section */}
             <div className="col-xl-6">
               <div className="faq-content style1">
                 <div className="section-title">
                   <SectionTitle
                     SubTitle="FAQs"
-                    Title="Frequently Ask Questions"
-                  ></SectionTitle>
+                    Title={mainContent?.title || "Frequently Asked Questions"}
+                  />
                   <p className="section-desc wow fadeInUp" data-wow-delay=".6s">
-                    {FaqContent.Content}
+                    {mainContent?.paragraph}
                   </p>
                 </div>
+
                 <div className="faq-accordion">
                   <div className="accordion" id="accordion">
-                    {data.slice(0, 3).map((item, index) => (
+                    {faqItems?.slice(0, 3).map((item, index) => (
                       <div
-                        key={index}
+                        key={item.id}
                         className={`accordion-item mb-3 wow fadeInUp ${
                           index === openItemIndex ? "active" : ""
                         }`}
-                        data-wow-delay=".3s"
+                        data-wow-delay={`.${index + 3}s`}
                       >
                         <h5
                           onClick={() => handleItemClick(index)}
                           className="accordion-header"
                         >
                           <button
-                            className="accordion-button collapsed"
+                            className={`accordion-button ${
+                              index === openItemIndex ? "" : "collapsed"
+                            }`}
                             type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faq1"
-                            aria-expanded="true"
-                            aria-controls="faq1"
                           >
-                            {item.title}
+                            {item.heading}
                           </button>
                         </h5>
                         <div
                           ref={accordionContentRef}
-                          id="faq1"
-                          className="accordion-collapse collapse"
-                          data-bs-parent="#accordion"
+                          className={`accordion-collapse collapse ${
+                            index === openItemIndex ? "show" : ""
+                          }`}
                         >
-                          <div className="accordion-body">{item.desc}</div>
+                          <div className="accordion-body">{item.paragraph}</div>
                         </div>
                       </div>
                     ))}
@@ -85,17 +70,23 @@ const Faq1 = () => {
                 </div>
               </div>
             </div>
+
+            {/* Right Section */}
             <div className="col-xl-6">
               <div className="faq-thumb">
-                <img
-                  className="main-thumb  wow fadeInUp"
-                  data-wow-delay=".2s"
-                  src={FaqContent.img1}
-                  alt="thumb"
-                />
-                <div className="absolute-thumb float-bob-x">
-                  <img src={FaqContent.img2} alt="thumb" />
-                </div>
+                {largeImage && (
+                  <img
+                    className="main-thumb wow fadeInUp"
+                    data-wow-delay=".2s"
+                    src={largeImage}
+                    alt="thumb"
+                  />
+                )}
+                {smallImage && (
+                  <div className="absolute-thumb float-bob-x">
+                    <img src={smallImage} alt="thumb" />
+                  </div>
+                )}
               </div>
             </div>
           </div>

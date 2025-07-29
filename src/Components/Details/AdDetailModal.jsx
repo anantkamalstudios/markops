@@ -4,8 +4,6 @@ import { Modal, Button } from "react-bootstrap";
 const AdDetailModal = ({ show, onHide, data }) => {
   if (!data) return null;
 
-  console.log(data);
-
   return (
     <Modal show={show} onHide={onHide} size="xl" centered>
       <Modal.Body>

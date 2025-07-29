@@ -6,6 +6,7 @@ const Choose1 = ({
   content,
   FeatureList,
   FeatureList2,
+  img,
   btnname,
   btnurl,
 }) => {
@@ -59,7 +60,7 @@ const Choose1 = ({
                         ))}
                       </ul>
                     </div>
-                    <Link
+                    {/* <Link
                       className="theme-btn wow fadeInUp"
                       data-wow-delay=".6s"
                       to={btnurl}
@@ -85,10 +86,10 @@ const Choose1 = ({
                           </clipPath>
                         </defs>
                       </svg>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
-                <div className="col-xl-6 order-1 order-xl-2">
+                <div className="col-xl-6 order-1 order-xl-2 d-none d-xl-block">
                   <div className="advantage-thumb">
                     <div
                       className="thumb1 img-custom-anim-top wow fadeInDown"
@@ -96,7 +97,11 @@ const Choose1 = ({
                       data-tilt
                       data-tilt-max="10"
                     >
-                      <img src="/assets/images/about/hand.png" alt="thumb" />
+                      <img
+                        src={`https://teal-sparrow-187679.hostingersite.com/public/${img}`}
+                        alt="thumb"
+                        className="choose-1-img"
+                      />
                     </div>
                     <div
                       className="thumb2 img-custom-anim-right wow fadeInRight"

@@ -1,135 +1,76 @@
 import { Link } from "react-router-dom";
+import useHome from "../../hooks/useHome";
+import { stripHtml } from "../../utils/utils";
 
 const BlogStandard = () => {
+  const { data, loading, error } = useHome();
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Failed to load blogs.</div>;
+  if (!data?.blog?.length) return <div>No blogs available.</div>;
+
+  const blogs = data.blog;
   return (
     <section className="news-standard fix section-padding">
       <div className="container">
+        <div className="d-flex justify-content-center legal-heading">
+          <h1>Blog Standards</h1>
+        </div>
         <div className="row g-4">
           <div className="col-12 col-lg-8">
             <div className="news-standard-wrapper">
-              <div
-                className="news-standard-items wow fadeInUp"
-                data-wow-delay=".2s"
-              >
-                <div className="news-thumb">
-                  <img src="/assets/images/blog/mainblog.jpg" alt="img" />
-                  <div className="post-date">
-                    <h3>
-                      27 <br />
-                      <span>Feb</span>
-                    </h3>
+              {blogs.map((blog, index) => {
+                const date = new Date(blog.published_at);
+                const day = date.getDate();
+                const month = date.toLocaleString("default", {
+                  month: "short",
+                });
+
+                return (
+                  <div
+                    key={blog.id}
+                    className="news-standard-items wow fadeInUp"
+                    data-wow-delay={`.${index + 2}s`}
+                  >
+                    <div className="news-thumb">
+                      <img
+                        src={`https://teal-sparrow-187679.hostingersite.com/public/${blog.image}`}
+                        alt={blog.title}
+                      />
+                      <div className="post-date">
+                        <h3>
+                          {day} <br />
+                          <span>{month}</span>
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div className="news-content">
+                      <ul>
+                        <li>
+                          <i className="bi bi-person"></i> By {blog.author}
+                        </li>
+                      </ul>
+                      <h3>
+                        <Link to={`/blog/blog-details`} state={{ blog }}>
+                          {blog.title}
+                        </Link>
+                      </h3>
+                      <p>
+                        {/* You can create a helper to extract text from HTML or just slice the title/description safely */}
+                        {stripHtml(blog.description).slice(0, 180)}...
+                      </p>
+                      <Link
+                        to={`/blog/blog-details/${blog.id}`}
+                        state={{ blog }}
+                        className="theme-btn mt-4"
+                      >
+                        Read More <i className="bi bi-arrow-right"></i>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-                <div className="news-content">
-                  <ul>
-                    <li>
-                      <i className="bi bi-person"></i>
-                      By Admin
-                    </li>
-                    <li>
-                      <i className="bi bi-chat"></i>3 Comments
-                    </li>
-                  </ul>
-                  <h3>
-                    <Link to="/blog/blog-details">
-                      Choose The Best IT Service Company in the City.
-                    </Link>
-                  </h3>
-                  <p>
-                    Pellentesque egestas rutrum nibh facilisis ultrices.
-                    Phasellus in magna ut orci malesuada the sollicitudin.
-                    Aenean faucibus scelerisque convallis. Quisque interdum
-                    mauris id nunc molestie tincidunt erat gravida. Nullam dui
-                    libero, mollis ac quam et, venenatis.
-                  </p>
-                  <Link to="/blog/blog-details" className="theme-btn mt-4">
-                    Read More
-                    <i className="bi bi-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-              <div
-                className="news-standard-items wow fadeInUp"
-                data-wow-delay=".4s"
-              >
-                <div className="news-thumb">
-                  <img src="/assets/images/blog/mainblog.jpg" alt="img" />
-                  <div className="post-date">
-                    <h3>
-                      19 <br />
-                      <span>Feb</span>
-                    </h3>
-                  </div>
-                </div>
-                <div className="news-content">
-                  <ul>
-                    <li>
-                      <i className="bi bi-person"></i>
-                      By Admin
-                    </li>
-                    <li>
-                      <i className="bi bi-chat"></i>2 Comments
-                    </li>
-                  </ul>
-                  <h3>
-                    <Link to="/blog/blog-details">
-                      Keep Your Business Safe Ensure High Availability
-                    </Link>
-                  </h3>
-                  <p>
-                    Pellentesque egestas rutrum nibh facilisis ultrices.
-                    Phasellus in magna ut orci malesuada the sollicitudin.
-                    Aenean faucibus scelerisque convallis. Quisque interdum
-                    mauris id nunc molestie tincidunt erat gravida. Nullam dui
-                    libero, mollis ac quam et, venenatis.
-                  </p>
-                  <Link to="/blog/blog-details" className="theme-btn mt-4">
-                    Read More
-                    <i className="bi bi-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-              <div
-                className="news-standard-items wow fadeInUp"
-                data-wow-delay=".6s"
-              >
-                <div className="news-thumb">
-                  <img src="/assets/images/blog/mainblog.jpg" alt="img" />
-                  <div className="post-date">
-                    <h3>
-                      28 <br />
-                      <span>Feb</span>
-                    </h3>
-                  </div>
-                </div>
-                <div className="news-content">
-                  <ul>
-                    <li>
-                      <i className="bi bi-person"></i>
-                      By Admin
-                    </li>
-                    <li>
-                      <i className="bi bi-chat"></i>0 Comments
-                    </li>
-                  </ul>
-                  <h3>
-                    <Link to="/blog/blog-details">
-                      Tackling the Changes of Retell Industry
-                    </Link>
-                  </h3>
-                  <p>
-                    Pellentesque egestas rutrum nibh facilisis ultrices.
-                    Phasellus in magna ut orci malesuada the sollicitudin.
-                    Aenean faucibus scelerisque convallis. Quisque interdum
-                    mauris id nunc molestie tincidunt erat gravida. Nullam dui
-                    libero, mollis ac quam et, venenatis.
-                  </p>
-                  <Link to="/blog/blog-details" className="theme-btn mt-4">
-                    Read More
-                    <i className="bi bi-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
           <div className="col-12 col-lg-4">
@@ -197,8 +138,12 @@ const BlogStandard = () => {
                 <div className="recent-post-area">
                   <div className="recent-items">
                     <div className="recent-thumb">
-                      <img
+                      {/* <img
                         src="/assets/images/blog/blogRecentThumb1_1.jpg"
+                        alt="img"
+                      /> */}
+                      <img
+                        src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?w=80&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8fDA%3D"
                         alt="img"
                       />
                     </div>
@@ -222,8 +167,12 @@ const BlogStandard = () => {
                   </div>
                   <div className="recent-items">
                     <div className="recent-thumb">
-                      <img
+                      {/* <img
                         src="/assets/images/blog/blogRecentThumb1_2.jpg"
+                        alt="img"
+                      /> */}
+                      <img
+                        src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?w=80&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8fDA%3D"
                         alt="img"
                       />
                     </div>
@@ -247,8 +196,12 @@ const BlogStandard = () => {
                   </div>
                   <div className="recent-items">
                     <div className="recent-thumb">
-                      <img
+                      {/* <img
                         src="/assets/images/blog/blogRecentThumb1_3.jpg"
+                        alt="img"
+                      /> */}
+                      <img
+                        src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?w=80&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8fDA%3D"
                         alt="img"
                       />
                     </div>

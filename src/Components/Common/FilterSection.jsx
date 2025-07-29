@@ -54,8 +54,7 @@ export default function FilterSection() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted with values:", formState);
+    e.preventDefault(); 
   };
 
   const toggleNetwork = (id) => {

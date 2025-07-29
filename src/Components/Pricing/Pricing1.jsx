@@ -1,13 +1,14 @@
 import { useState } from "react";
 import PricingCard from "../Card/PricingCard";
+import { parseHTMLList } from "../../utils/utils";
 
-const Pricing1 = () => {
+const Pricing1 = ({ pricing }) => {
   const [isActive, setIsActive] = useState("monthly");
 
   return (
-    <section className="pricing-section section-padding pt-0 fix">
+    <section className="pricing-section section-padding fix">
       <div className="container">
-        <div className="section-title text-center mxw-685 mx-auto">
+        <div className="section-title text-center mxw-700 mx-auto">
           <div className="subtitle">
             Our Pricing{" "}
             <img src="/assets/images/icon/fireIcon.svg" alt="icon" />
@@ -22,7 +23,7 @@ const Pricing1 = () => {
           <div className="tab-section d-flex justify-content-center align-items-center">
             <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
               <li
-                className={`nav-item ${isActive === "monthly" ? "active" : ""}`}
+                className="nav-item"
                 onClick={() => setIsActive("monthly")}
                 role="presentation"
               >
@@ -30,7 +31,6 @@ const Pricing1 = () => {
                   className={`nav-link ${
                     isActive === "monthly" ? "active" : ""
                   }`}
-                  id="pills-monthly-tab"
                   type="button"
                   role="tab"
                 >
@@ -38,7 +38,7 @@ const Pricing1 = () => {
                 </button>
               </li>
               <li
-                className={`nav-item ${isActive === "yearly" ? "active" : ""}`}
+                className="nav-item"
                 onClick={() => setIsActive("yearly")}
                 role="presentation"
               >
@@ -46,7 +46,6 @@ const Pricing1 = () => {
                   className={`nav-link ${
                     isActive === "yearly" ? "active" : ""
                   }`}
-                  id="pills-yearly-tab"
                   type="button"
                   role="tab"
                 >
@@ -57,6 +56,33 @@ const Pricing1 = () => {
           </div>
 
           <div className="tab-content" id="pills-tabContent">
+            <div
+              className={`tab-pane active`}
+              id="pills-pricing"
+              role="tabpanel"
+            >
+              <div className="row gy-5">
+                {pricing.map((plan) => (
+                  <PricingCard
+                    key={plan.id}
+                    name={plan.plan_name}
+                    price={
+                      isActive === "monthly"
+                        ? `$${plan.monthly_price}`
+                        : `$${plan.yearly_price}`
+                    }
+                    monthly={isActive === "monthly" ? "Per Month" : "Per Year"}
+                    content={plan.description}
+                    FeatureList={parseHTMLList(plan.features)}
+                    btnname="Get Your Free Plan"
+                    btnurl="/pricing"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="tab-content" id="pills-tabContent">
             <div
               className={`tab-pane ${isActive === "monthly" ? "active" : ""}`}
               id="pills-monthly"
@@ -169,7 +195,7 @@ const Pricing1 = () => {
                 ></PricingCard>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

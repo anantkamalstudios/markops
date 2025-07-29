@@ -41,7 +41,16 @@ export default function Header1({ variant }) {
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding" to="/">
-                  {/* <img src="/assets/images/logo/logo.svg" alt="Logo" /> */}
+                  {/* <img
+                    src="/assets/images/logo/MarkOpsSvg.svg"
+                    alt="Logo"
+                    className=""
+                    style={{
+                      width: "200px",
+                      padding: "15%",
+                      height: "150px",
+                    }}
+                  /> */}
                   <h1>MarkOps</h1>
                 </Link>
               </div>

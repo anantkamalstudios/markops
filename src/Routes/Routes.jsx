@@ -37,6 +37,10 @@ import InstagramPage from "../Pages/InstagramPage";
 import XPage from "../Pages/XPage";
 import GoogleAboutUs from "../Pages/GoogleAboutUs";
 import LinkedinAboutUs from "../Pages/LinkedinAboutUs";
+import TutorialPage from "../Pages/TutorialPage";
+import ToolDetails from "../Components/ToolDetails/ToolDetails";
+import BlogDetails from "../Components/BlogDetails/BlogDetails";
+import NotFoundPage from "../Pages/NotFoundPage";
 
 export const router = createBrowserRouter([
   {
@@ -142,13 +146,29 @@ export const router = createBrowserRouter([
         element: <Refund></Refund>,
       },
       {
+        path: "/tutorials",
+        element: <TutorialPage></TutorialPage>,
+      },
+      {
         path: "/blog",
         element: <BlogPage></BlogPage>,
       },
       {
-        path: "/blog-sidebar",
+        path: "/blog/blog-details",
+        element: <BlogDetails />,
+      },
+      {
+        path: "/blogs",
         element: <BlogStandardPage></BlogStandardPage>,
       },
+      {
+        path: "/markops-tools",
+        element: <ToolDetails></ToolDetails>,
+      },
+      // {
+      //   path: "/blog-sidebar",
+      //   element: <BlogStandardPage></BlogStandardPage>,
+      // },
       {
         path: "/blog-left-sidebar",
         element: <BlogLeftPage></BlogLeftPage>,
@@ -192,5 +212,10 @@ export const router = createBrowserRouter([
         element: <Home3></Home3>,
       },
     ],
+  },
+
+  {
+    path: "*",
+    element: <NotFoundPage />,
   },
 ]);

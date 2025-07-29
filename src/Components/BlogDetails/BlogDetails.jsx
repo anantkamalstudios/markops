@@ -1,11 +1,26 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
+import { useLocation, useParams } from "react-router-dom";
 
 const BlogDetails = () => {
+  const { state } = useLocation();
+  const navigate = useNavigate();
+  const blog = state?.blog;
+
+  if (!blog) {
+    return <p>Blog not found.</p>;
+  }
+
   useEffect(() => {
     loadBackgroudImages();
-  }, []);
+    if (!state || !state.blog) {
+      navigate("/blog");
+    }
+  }, [state, navigate]);
+ 
+
+  if (!blog) return <p>No data available</p>;
 
   return (
     <section className="news-standard section-padding fix">
@@ -26,39 +41,21 @@ const BlogDetails = () => {
                     >
                       <li>
                         <i className="bi bi-person"></i>
-                        By Admin
+                        {blog.author}
                       </li>
-                      <li>
+                      {/* <li>
                         <i className="bi bi-chat"></i>2 Comments
-                      </li>
+                      </li> */}
                       <li>
                         <img src="/assets/images/icon/tagIcon.png" alt="icon" />
-                        IT Services
+                        {blog.tag}
                       </li>
                     </ul>
                     <h3 className="wow fadeInUp" data-wow-delay=".4s">
-                      Tackling the Changes of Retail Industry
+                      {blog.title}
                     </h3>
                     <p className="mb-3 wow fadeInUp" data-wow-delay=".6s">
-                      Consectetur adipisicing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore of magna aliqua. Ut enim ad
-                      minim veniam, made of owl the quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea dolor commodo
-                      consequat. Duis aute irure and dolor in reprehenderit.
-                    </p>
-                    <p className="mb-3 wow fadeInUp" data-wow-delay=".8s">
-                      The is ipsum dolor sit amet consectetur adipiscing elit.
-                      Fusce eleifend porta arcu In hac habitasse the is platea
-                      augue thelorem turpoi dictumst. In lacus libero faucibus
-                      at malesuada sagittis placerat eros sed istincidunt augue
-                      ac ante rutrum sed the is sodales augue consequat.
-                    </p>
-                    <p className="wow fadeInUp" data-wow-delay="1s">
-                      Nulla facilisi. Vestibulum tristique sem in eros eleifend
-                      imperdiet. Donec quis convallis neque. In id lacus
-                      pulvinar lacus, eget vulputate lectus. Ut viverra bibendum
-                      lorem, at tempus nibh mattis in. Sed a massa eget lacus
-                      consequat auctor.
+                      {blog.description.replace(/<[^>]+>/g, "")}
                     </p>
                     <div
                       className="hilight-text mt-4 mb-4 wow fadeInUp"
@@ -87,33 +84,15 @@ const BlogDetails = () => {
                         />
                       </svg>
                     </div>
-                    <p className="mt-4 mb-5 wow fadeInUp" data-wow-delay="1s">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit Ut
-                      et massa mi. Aliquam in hendrerit urna. Pellentesque sit
-                      amet sapien fringilla, mattis ligula consectetur, ultrices
-                      mauris. Maecenas vitae mattis tellus. Nullam quis
-                      imperdiet augue. Vestibulum auctor ornare leo, non
-                      suscipit magna interdum eu. Curabitur pellentesque nibh
-                      nibh, at maximus ante fermentum sit amet. Pellentesque
-                      commodo lacus at sodales sodales. Quisque sagittis orci ut
-                      diam condimentum, vel euismod erat placerat. In iaculis
-                      arcu eros.
-                    </p>
                     <div className="row g-4 wow fadeInUp" data-wow-delay="1s">
                       <div className="col-lg-6">
                         <div className="details-image">
-                          <img
-                            src="/assets/images/blog/blogCardThumb3_2.png"
-                            alt="img"
-                          />
+                          <img src="/assets/images/blog/blog3.jpg" alt="img" />
                         </div>
                       </div>
                       <div className="col-lg-6">
                         <div className="details-image">
-                          <img
-                            src="/assets/images/blog/blogCardThumb3_3.png"
-                            alt="img"
-                          />
+                          <img src="/assets/images/blog/blog.jpg" alt="img" />
                         </div>
                       </div>
                     </div>
@@ -175,7 +154,7 @@ const BlogDetails = () => {
                   <div className="blog-single-comment d-flex gap-4 pt-30 pb-30">
                     <div className="image">
                       <img
-                        src="/assets/images/blog/blogProfileThumb3_1.png"
+                        src="/assets/images/testimoial/women_testmonial.jpg"
                         alt="image"
                       />
                     </div>
@@ -204,7 +183,7 @@ const BlogDetails = () => {
                   <div className="blog-single-comment d-flex gap-4 pt-30 pb-30">
                     <div className="image">
                       <img
-                        src="/assets/images/blog/blogProfileThumb3_2.png"
+                        src="/assets/images/testimoial/women_testmonial.jpg"
                         alt="image"
                       />
                     </div>
@@ -343,8 +322,12 @@ const BlogDetails = () => {
                   <div className="recent-post-area">
                     <div className="recent-items">
                       <div className="recent-thumb">
-                        <img
+                        {/* <img
                           src="/assets/images/blog/blogRecentThumb1_1.jpg"
+                          alt="img"
+                        /> */}
+                        <img
+                          src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?w=80&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8fDA%3D"
                           alt="img"
                         />
                       </div>
@@ -368,8 +351,12 @@ const BlogDetails = () => {
                     </div>
                     <div className="recent-items">
                       <div className="recent-thumb">
-                        <img
+                        {/* <img
                           src="/assets/images/blog/blogRecentThumb1_2.jpg"
+                          alt="img"
+                        /> */}
+                        <img
+                          src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?w=80&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8fDA%3D"
                           alt="img"
                         />
                       </div>
@@ -393,8 +380,12 @@ const BlogDetails = () => {
                     </div>
                     <div className="recent-items">
                       <div className="recent-thumb">
-                        <img
+                        {/* <img
                           src="/assets/images/blog/blogRecentThumb1_3.jpg"
+                          alt="img"
+                        /> */}
+                        <img
+                          src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?w=80&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8fDA%3D"
                           alt="img"
                         />
                       </div>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Blog1 = () => {
+const Blog1 = ({ blogs }) => {
   return (
     <section className="blog-section section-padding fix">
       <div className="container">
@@ -13,130 +13,66 @@ const Blog1 = () => {
               Recent Articles And Latest Blog
             </h2>
           </div>
+
           <div className="row gy-5">
-            <div className="col-xl-4 col-md-6">
-              <div
-                className="blog-card style1 wow fadeInUp"
-                data-wow-delay=".2s"
-              >
-                <div className="thumb">
-                  <img src="/assets/images/blog/blog.jpg" alt="thumb" />
-                </div>
-                <div className="body">
-                  <div className="tag-meta">
-                    <img src="/assets/images/icon/FolderIcon.svg" alt="icon" />
-                    Workplace
+            {blogs.map((blog, index) => (
+              <div className="col-xl-4 col-md-6" key={blog.id}>
+                <div
+                  className="blog-card style1 wow fadeInUp"
+                  data-wow-delay={`.${index + 2}s`}
+                >
+                  <div className="thumb">
+                    <img
+                      src={`https://teal-sparrow-187679.hostingersite.com/public/${blog.image}`}
+                      alt={blog.title}
+                    />
                   </div>
-                  <h3>
-                    <Link to="/blog/blog-details">
-                      Services that printing at you is important
-                    </Link>
-                  </h3>
-                  <div className="blog-meta">
-                    <div className="item child1">
-                      <span className="icon">
-                        <img
-                          src="/assets/images/icon/userIcon.svg"
-                          alt="icon"
-                        />
-                      </span>
-                      <span className="text">By Admin</span>
+                  <div className="body">
+                    <div className="tag-meta">
+                      <img
+                        src="/assets/images/icon/FolderIcon.svg"
+                        alt="icon"
+                      />
+                      {blog.tag}
                     </div>
-                    <div className="item">
-                      <span className="icon">
-                        <img
-                          src="/assets/images/icon/calendar.svg"
-                          alt="icon"
-                        />
-                      </span>
-                      <span className="text">Sep 30, 2024</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div
-                className="blog-card style1 wow fadeInUp"
-                data-wow-delay=".4s"
-              >
-                <div className="thumb">
-                  <img src="/assets/images/blog/blog_2.jpg" alt="thumb" />
-                </div>
-                <div className="body">
-                  <div className="tag-meta">
-                    <img src="/assets/images/icon/FolderIcon.svg" alt="icon" />
-                    Coding
-                  </div>
-                  <h3>
-                    <Link to="/blog/blog-details">
-                      A checklist to improve your daily routine
-                    </Link>
-                  </h3>
-                  <div className="blog-meta">
-                    <div className="item child1">
-                      <span className="icon">
-                        <img
-                          src="/assets/images/icon/userIcon.svg"
-                          alt="icon"
-                        />
-                      </span>
-                      <span className="text">By Admin</span>
-                    </div>
-                    <div className="item">
-                      <span className="icon">
-                        <img
-                          src="/assets/images/icon/calendar.svg"
-                          alt="icon"
-                        />
-                      </span>
-                      <span className="text">Sep 30, 2024</span>
+                    <h3>
+                      <Link to={`/blog/blog-details`} state={{ blog }}>
+                        {blog.title}
+                      </Link>
+                    </h3>
+                    <div className="blog-meta">
+                      <div className="item child1">
+                        <span className="icon">
+                          <img
+                            src="/assets/images/icon/userIcon.svg"
+                            alt="icon"
+                          />
+                        </span>
+                        <span className="text">By {blog.author}</span>
+                      </div>
+                      <div className="item">
+                        <span className="icon">
+                          <img
+                            src="/assets/images/icon/calendar.svg"
+                            alt="icon"
+                          />
+                        </span>
+                        <span className="text">
+                          {new Date(blog.published_at).toLocaleDateString(
+                            "en-US",
+                            {
+                              year: "numeric",
+                              month: "short",
+                              day: "numeric",
+                            }
+                          )}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div
-                className="blog-card style1 wow fadeInUp"
-                data-wow-delay=".6s"
-              >
-                <div className="thumb">
-                  <img src="/assets/images/blog/blog3.jpg" alt="thumb" />
-                </div>
-                <div className="body">
-                  <div className="tag-meta">
-                    <img src="/assets/images/icon/FolderIcon.svg" alt="icon" />
-                    Technology
-                  </div>
-                  <h3>
-                    <Link to="/blog/blog-details">
-                      That will help you get 1% better every day
-                    </Link>
-                  </h3>
-                  <div className="blog-meta">
-                    <div className="item child1">
-                      <span className="icon">
-                        <img
-                          src="/assets/images/icon/userIcon.svg"
-                          alt="icon"
-                        />
-                      </span>
-                      <span className="text">By Admin</span>
-                    </div>
-                    <div className="item">
-                      <span className="icon">
-                        <img
-                          src="/assets/images/icon/calendar.svg"
-                          alt="icon"
-                        />
-                      </span>
-                      <span className="text">Sep 30, 2024</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

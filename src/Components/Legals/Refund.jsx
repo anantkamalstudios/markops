@@ -4,13 +4,10 @@ import BreadCumb from "../Common/BreadCumb";
 const Refund = () => {
   return (
     <section className="about-section section-padding fix">
-      <BreadCumb
-        bgimg="/assets/images/bg/breadcumgBg.png"
-        Title="Refund Policy"
-      ></BreadCumb>
+      <div className="d-flex justify-content-center legal-heading">
+        <h1>Refund Policies</h1>
+      </div>
       <div className="container">
-        <h2 className="mb-4 fw-bold">Refund Policy</h2>
-
         <div className="mb-4">
           <h5 className="fw-semibold">Acceptance of Refund Policy</h5>
           <p>

@@ -15,7 +15,6 @@ const timeRanges = [
 export default function FeatureFilterSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted with values:", formState);
   };
 
   const [formState, setFormState] = useState({

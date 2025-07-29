@@ -22,15 +22,23 @@ const Footer = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link to="/">
-                    <img src="/assets/images/logo/logo.svg" alt="logo-img" />
+                    <img
+                      src="/assets/images/logo/MarkOpsName.png"
+                      alt="logo-img"
+                      style={{
+                        width: "300px",
+                        height: "170px",
+                      }}
+                    />
+                    {/* <h1>MarkOps</h1> */}
                   </Link>
                 </div>
                 <div className="footer-content">
                   <p>
-                    It is a long established fact that from will be distracted
-                    by the readable from when looking.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat ullam doloribus, alias facere veritatis doloremque.
                   </p>
-                  <div className="store-links">
+                  {/* <div className="store-links">
                     <div className="apple">
                       <a href="#">
                         <svg
@@ -65,7 +73,7 @@ const Footer = () => {
                         Play Store
                       </a>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -126,7 +134,41 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6">
+            <div
+              className="col-xl-2 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".8s"
+            >
+              <div className="single-footer-widget">
+                <div className="widget-head">
+                  <h3> Address </h3>
+                </div>
+                <ul className="list-area">
+                  <li>
+                    <Link to="#">
+                      <a href="mailto:contact.tech@gmail.com">
+                        contact.tech@gmail.com
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="#">
+                      <a href="mailto:info@MarkOps.com">info@markops.com</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="#">
+                      <a href="tel:21314234323543">+880 123 654 789 00</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="#">
+                      <a href="tel:35234523452345">+001 6520 698 00</a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {/* <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="single-footer-widget">
                 <div className="contact-box">
                   <div className="subtitle">Address</div>
@@ -206,7 +248,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

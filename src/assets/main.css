@@ -3743,8 +3743,10 @@ input.main-search-input::placeholder {
 }
 
 .section-padding {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 50px;
 }
+
 @media (max-width: 1199px) {
   .section-padding {
     padding: 100px 0;
@@ -6592,6 +6594,7 @@ input.main-search-input::placeholder {
     gap: 20px;
   }
 }
+
 .hero-3 .hero-image {
   margin-right: -60%;
   position: relative;
@@ -7081,7 +7084,7 @@ input.main-search-input::placeholder {
 }
 .advantage-wrapper.style1 .advantage-thumb .shape1 {
   position: absolute;
-  bottom: 0;
+  bottom: -70px;
   right: -30px;
 }
 .advantage-wrapper.style1 .advantage-thumb .shape1 img {
@@ -8223,6 +8226,9 @@ input.main-search-input::placeholder {
     flex-direction: column;
   }
 }
+.pricing-section {
+  margin-top: 50px;
+}
 
 .pricing-section-3 {
   background-repeat: no-repeat;
@@ -8358,7 +8364,16 @@ input.main-search-input::placeholder {
   border-radius: 15px;
   border: 1px solid var(--border);
   background: var(--white);
+  transition: 0.3s ease-in-out;
 }
+
+.blog-card.style1:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: scale(1.05);
+}
+
 .blog-card.style1 .thumb {
   max-width: 100%;
 }
@@ -8904,6 +8919,7 @@ input.main-search-input::placeholder {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  background-repeat: no-repeat;
 }
 @media (max-width: 991px) {
   .news-details-area .blog-post-details .single-blog-post .post-featured-thumb {
@@ -12144,34 +12160,137 @@ textarea.is-invalid {
     text-align: center;
   }
 }
-
-.table-responsive {
-  overflow-x: auto;
+.datatable-wrapper {
+  padding: 1rem;
 }
 
-table.table td,
-table.table th {
-  vertical-align: middle;
-  white-space: nowrap;
+/* Creative column */
+.creative-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
 }
 
+.creative-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.creative-icon {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 2;
+  color: #fff;
+}
+
+.creative-badges {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.creative-badges .badge {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px 4px;
+  font-size: 10px;
+  border-radius: 4px;
+  color: white;
+}
+
+/* Advertiser logo */
+.advertiser-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive adjustments (optional) */
 @media (max-width: 768px) {
-  .table thead {
-    display: none;
-  }
-
-  .table tbody td {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.75rem;
-    border: none;
-    border-bottom: 1px solid #dee2e6;
-  }
-
-  .table tbody tr {
-    display: block;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+  .datatable-wrapper {
+    padding: 0.5rem;
   }
 }
+/* contact us */
+.contact-us-cards {
+  transition: 0.3s ease-in-out;
+}
+.contact-us-cards:hover {
+  transform: scale(1.05);
+}
+
+/* Legal */
+.legal-heading {
+  margin-bottom: 3rem;
+}
+.legal-heading h1 {
+  font-size: 68px;
+}
+
+/* Tool Card */
+.tool-card {
+  max-width: 360px;
+  margin: 0 auto;
+  display: block;
+  text-decoration: none;
+}
+
+.tool-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #7444fd;
+}
+
+.tool-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tool-desc {
+  color: #6c757d;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/* Page Table */
+.datatable-wrapper {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.custom-datatable .rdt_TableHeadRow {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.custom-datatable .rdt_TableRow:hover {
+  background-color: #f1f1f1;
+}
+
+.custom-datatable canvas {
+  max-width: 100%;
+}
+
+/* Choose 1 */
+.choose-1-img {
+  width: 80%;
+  left: 70px;
+  position: relative;
+}
+
+
+/* Shimmer */

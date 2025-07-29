@@ -4,13 +4,10 @@ import BreadCumb from "../Common/BreadCumb";
 const TermCondition = () => {
   return (
     <section className="about-section section-padding fix">
-      <BreadCumb
-        bgimg="/assets/images/bg/breadcumgBg.png"
-        Title="Terms N Conditions"
-      ></BreadCumb>
+      <div className="d-flex justify-content-center legal-heading">
+        <h1>Terms &amp; Conditions</h1>
+      </div>
       <div className="container">
-        <h2 className="mb-4 fw-bold">Terms & Conditions</h2>
-
         <div className="mb-4">
           <h5 className="fw-semibold">1. Acceptance of Terms</h5>
           <p>

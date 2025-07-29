@@ -89,7 +89,7 @@ export default function Nav({ setMobileToggle }) {
       </li>
 
       <li className="">
-        <Link to="/service" onClick={() => setMobileToggle(false)}>
+        <Link to="/pricing" onClick={() => setMobileToggle(false)}>
           Pricing
         </Link>
       </li>
@@ -100,20 +100,17 @@ export default function Nav({ setMobileToggle }) {
         <DropDown>
           <ul>
             <li>
-              <Link to="/blog" onClick={() => setMobileToggle(false)}>
+              <Link to="/tutorials" onClick={() => setMobileToggle(false)}>
                 Tutorials
               </Link>
             </li>
             <li>
-              <Link to="/blog-sidebar" onClick={() => setMobileToggle(false)}>
+              <Link to="/blogs" onClick={() => setMobileToggle(false)}>
                 Blog
               </Link>
             </li>
             <li>
-              <Link
-                to="/blog/blog-details"
-                onClick={() => setMobileToggle(false)}
-              >
+              <Link to="markops-tools" onClick={() => setMobileToggle(false)}>
                 Tool
               </Link>
             </li>
