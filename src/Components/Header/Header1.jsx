@@ -78,10 +78,13 @@ export default function Header1({ variant }) {
                     <i className="bi bi-search"></i>
                   </a>
                   <div className="header-button ms-4">
-                    <Link to="/contact" className="theme-btn">
+                    <Link
+                      to="https://teal-sparrow-187679.hostingersite.com/login"
+                      className="theme-btn"
+                    >
                       <span>
-                        Get Started
-                        <i className="bi bi-arrow-right"></i>
+                        Login
+                        <i class="bi bi-door-open"></i>
                       </span>
                     </Link>
                   </div>

@@ -43,7 +43,19 @@ const Feature1 = ({ featuresData }) => {
                           : "/assets/images/icon/default.svg"
                       }
                       title={item.title}
-                      content={item.description}
+                      content={
+                        <div className="feature-card-description">
+                          {item.description
+                            .split("•")
+                            .map((point) => point.trim())
+                            .filter((point) => point.length > 0)
+                            .map((point, index) => (
+                              <div key={index} className="mb-1">
+                                • {point}
+                              </div>
+                            ))}
+                        </div>
+                      }
                     />
                   ))}
                 </div>
@@ -80,7 +92,19 @@ const Feature1 = ({ featuresData }) => {
                           : "/assets/images/icon/default.svg"
                       }
                       title={item.title}
-                      content={item.description}
+                      content={
+                        <div className="feature-card-description">
+                          {item.description
+                            .split("•")
+                            .map((point) => point.trim())
+                            .filter((point) => point.length > 0)
+                            .map((point, index) => (
+                              <div key={index} className="mb-1">
+                                • {point}
+                              </div>
+                            ))}
+                        </div>
+                      }
                     />
                   ))}
                 </div>

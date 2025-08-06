@@ -141,7 +141,7 @@ const HeroBanner1 = ({
                     <img
                       className="main-thumb img-custom-anim-right wow fadeInUp translate-middle img-fluid"
                       style={{
-                        top: "36rem",
+                        top: "30rem",
                         position: "absolute",
                         left: "48%",
                       }}

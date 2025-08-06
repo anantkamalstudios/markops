@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600");
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #7444fd;
+  --theme: #3167b3;
   --theme2: #f9f3ef;
   --theme3: #faf8ff;
   --title: #282c32;
@@ -25,8 +26,8 @@
 }
 
 body {
-  /* font-family: "Poppins"; */
-  font-family: "Poppins";
+  /* font-family: "Kodchasan", sans-serif; */
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 28px;
@@ -64,7 +65,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   margin: 0px;
   padding: 0;
   color: var(--title);
@@ -145,7 +146,7 @@ span {
 
 .info-text-style {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -167,7 +168,7 @@ span {
 }
 .form-contl input::placeholder {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -217,7 +218,7 @@ textarea.form-control:focus {
 
 label {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -383,7 +384,7 @@ input[type="radio"]:checked ~ label::before {
   padding: 20px 36px;
   gap: 10px;
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -580,7 +581,7 @@ input[type="radio"]:checked ~ label::before {
 
 .link-btn.style1 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -594,7 +595,7 @@ input[type="radio"]:checked ~ label::before {
   display: inline-block;
   background: var(--theme);
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2546,7 +2547,7 @@ input[type="radio"]:checked ~ label::before {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   position: absolute;
   top: -3px;
   transform: rotateY(-90deg);
@@ -2624,7 +2625,7 @@ input[type="radio"]:checked ~ label::before {
 .single-section-title {
   color: var(--title);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -2645,7 +2646,7 @@ input[type="radio"]:checked ~ label::before {
   border-radius: 100px;
   background: rgba(116, 68, 253, 0.15);
   color: var(--theme);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2662,7 +2663,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .section-title .title {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -2677,7 +2678,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .section-title .section-desc {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2915,7 +2916,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .fancy-box.style1 h4 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -2933,7 +2934,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .fancy-box.style2 .content h4 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -2943,7 +2944,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .fancy-box.style2 .content .text {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2960,7 +2961,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .fancy-box.style3 .content h4 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -2970,7 +2971,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .fancy-box.style3 .content .text {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2989,7 +2990,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .fancy-box.style4 .content h5 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -2998,7 +2999,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .fancy-box.style4 .content .text {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -3092,7 +3093,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .counter-box.style1 .counter {
   color: var(--theme);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -3101,7 +3102,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .counter-box.style1 p {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -3109,7 +3110,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .counter-box.style3 .counter {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -3119,7 +3120,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .counter-box.style3 .text {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -3141,7 +3142,7 @@ input[type="radio"]:checked ~ label::before {
 
 .checklist.style1 li {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -3181,7 +3182,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .contact-meta .video-box h4 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -3269,7 +3270,7 @@ input[type="radio"]:checked ~ label::before {
   background-size: 0% 2px;
   color: transparent;
   -webkit-text-stroke: 1px #bcb8b1;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -3345,7 +3346,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .modal-details .title-box .title h3 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -3354,7 +3355,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .modal-details .title-box .price {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -3363,7 +3364,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .modal-details .desc p {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -3380,7 +3381,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .progress-wrap .progress-meta .title {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -3388,7 +3389,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .progress-wrap .progress-meta .percentage {
   color: var(--theme);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -3534,7 +3535,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .comment-list .comment-item .post-comment .comment-content .name {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -3584,7 +3585,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .profile-meta .content h6 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -3592,7 +3593,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .profile-meta .content p {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -3616,7 +3617,7 @@ input[type="radio"]:checked ~ label::before {
 }
 .comment-form .inner-title {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -4271,7 +4272,7 @@ input.main-search-input::placeholder {
 }
 .header-2 .header-right .header-contact-info.style2 .content h6 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4280,7 +4281,7 @@ input.main-search-input::placeholder {
 }
 .header-2 .header-right .header-contact-info.style2 .content h5 a {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -4634,7 +4635,7 @@ input.main-search-input::placeholder {
   text-align: left;
   position: relative;
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -4685,7 +4686,7 @@ input.main-search-input::placeholder {
   position: relative;
   z-index: 999;
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -5272,7 +5273,7 @@ input.main-search-input::placeholder {
   padding: 8px 24px;
   background-color: var(--theme2);
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -5292,7 +5293,7 @@ input.main-search-input::placeholder {
 .breadcrumb-wrapper .page-heading h1 {
   color: var(--white);
   color: var(--theme2);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -5405,7 +5406,7 @@ input.main-search-input::placeholder {
 .error-wrapper .error-items h1 {
   color: var(--title);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -5416,7 +5417,7 @@ input.main-search-input::placeholder {
 .error-wrapper .error-items p {
   color: var(--text);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -5476,7 +5477,7 @@ input.main-search-input::placeholder {
 .breadcumb-container-wrapper .breadcumb-wrapper .page-heading h1 {
   color: var(--title);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -5491,7 +5492,7 @@ input.main-search-input::placeholder {
 }
 .breadcumb-container-wrapper .breadcumb-wrapper .page-heading .links {
   color: var(--theme);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -5531,7 +5532,7 @@ input.main-search-input::placeholder {
 }
 .footer-top .fancy-box .item2 h6 {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -5541,7 +5542,7 @@ input.main-search-input::placeholder {
 }
 .footer-top .fancy-box .item2 p {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -5584,7 +5585,7 @@ input.main-search-input::placeholder {
 }
 .footer-widgets-wrapper .single-footer-widget .widget-head h3 {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -6226,7 +6227,7 @@ input.main-search-input::placeholder {
   background: rgba(116, 68, 253, 0.15);
   backdrop-filter: blur(2px);
   color: var(--theme);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -6241,7 +6242,7 @@ input.main-search-input::placeholder {
   border-radius: 30px;
   background: var(--white);
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -6250,7 +6251,7 @@ input.main-search-input::placeholder {
 }
 .intro-wrapper.style1 .intro-content .intro-section-title .intro-title {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -6277,7 +6278,7 @@ input.main-search-input::placeholder {
 }
 .intro-wrapper.style1 .intro-content .intro-section-title .intro-desc {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -6361,7 +6362,7 @@ input.main-search-input::placeholder {
   backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -6375,7 +6376,7 @@ input.main-search-input::placeholder {
   border-radius: 30px;
   background: var(--white);
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -6390,7 +6391,7 @@ input.main-search-input::placeholder {
 }
 .intro-wrapper.style2 .intro-content .intro-section-title .intro-title {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   text-align: center;
   font-size: 64px;
   font-style: normal;
@@ -6407,7 +6408,7 @@ input.main-search-input::placeholder {
 }
 .intro-wrapper.style2 .intro-content .intro-section-title .intro-desc {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -6842,7 +6843,7 @@ input.main-search-input::placeholder {
 .work-process-box.style1 .step {
   color: var(--theme);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -6861,7 +6862,7 @@ input.main-search-input::placeholder {
 .work-process-box.style1 .title {
   color: var(--title);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -6872,7 +6873,7 @@ input.main-search-input::placeholder {
 .work-process-box.style1 .text {
   color: var(--text);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -6933,7 +6934,7 @@ input.main-search-input::placeholder {
 }
 .wp-wrapper.style2 .feature-box-wrapper.style2 .feature-box.style2 .content h5 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -6947,7 +6948,7 @@ input.main-search-input::placeholder {
   .content
   .text {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -6989,7 +6990,7 @@ input.main-search-input::placeholder {
   background-color: var(--theme);
   padding: 15px 20px 0;
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -7038,7 +7039,7 @@ input.main-search-input::placeholder {
   padding-top: 15px;
   background-color: var(--theme);
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -7231,7 +7232,7 @@ input.main-search-input::placeholder {
 .wcu-wrapper.style3 .wcu-thumb .thumb-box h5 {
   color: var(--white);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -7240,7 +7241,7 @@ input.main-search-input::placeholder {
 .wcu-wrapper.style3 .wcu-thumb .thumb-box .text {
   color: var(--white);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -7266,7 +7267,7 @@ input.main-search-input::placeholder {
 .wcu-wrapper.style3 .wcu-thumb .thumb-box .shape-box .shape-content h6 {
   color: var(--white);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -7275,7 +7276,7 @@ input.main-search-input::placeholder {
 .wcu-wrapper.style3 .wcu-thumb .thumb-box .shape-box .shape-content h3 {
   color: var(--white);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -7316,7 +7317,7 @@ input.main-search-input::placeholder {
 }
 .counter-box.style1 .counter .counter-number {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -7325,7 +7326,7 @@ input.main-search-input::placeholder {
 }
 .counter-box.style1 .counter .plus {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -7334,7 +7335,7 @@ input.main-search-input::placeholder {
 }
 .counter-box.style1 .text {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -7451,7 +7452,7 @@ input.main-search-input::placeholder {
   padding-top: 15px;
   background-color: var(--theme);
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -7478,7 +7479,7 @@ input.main-search-input::placeholder {
 }
 .faq-content.style1 .accordion-item .accordion-header .accordion-button {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -7591,7 +7592,7 @@ input.main-search-input::placeholder {
 }
 .testimonial-card.style1 .testimonial-body .desc {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -7649,7 +7650,7 @@ input.main-search-input::placeholder {
 }
 .testimonial-card.style2 .testimonial-body .desc {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -7809,6 +7810,13 @@ input.main-search-input::placeholder {
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.3);
   width: 353px;
 }
+
+/* .feature-card-description {
+  max-height: 160px;  
+  overflow-y: auto;
+  padding-right: 4px; 
+} */
+
 @media (max-width: 991px) {
   .feature-box.style1 {
     max-width: 100%;
@@ -7824,7 +7832,7 @@ input.main-search-input::placeholder {
 }
 .feature-box.style1 .feature-box-header .content h5 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -7833,7 +7841,7 @@ input.main-search-input::placeholder {
 }
 .feature-box.style1 .feature-box-header .content .text {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -7848,7 +7856,7 @@ input.main-search-input::placeholder {
 }
 .feature-box.style1 .feature-box-footer .content .day {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -7857,7 +7865,7 @@ input.main-search-input::placeholder {
 }
 .feature-box.style1 .feature-box-footer .content .time {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -8115,7 +8123,7 @@ input.main-search-input::placeholder {
 }
 .pricing-card.style1 .pricing-card-header h6 {
   color: var(--theme);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -8128,7 +8136,7 @@ input.main-search-input::placeholder {
 }
 .pricing-card.style1 .pricing-card-header .price-wrapper .price {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -8137,7 +8145,7 @@ input.main-search-input::placeholder {
 }
 .pricing-card.style1 .pricing-card-header .price-wrapper .text {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -8202,7 +8210,7 @@ input.main-search-input::placeholder {
 }
 .pricing-wrapper.style1 .tab-section .nav-pills .nav-link {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -8328,7 +8336,7 @@ input.main-search-input::placeholder {
 }
 .cta-wrapper.style2 .cta-content h2 {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
@@ -8337,7 +8345,7 @@ input.main-search-input::placeholder {
 }
 .cta-wrapper.style2 .cta-content p {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -8411,7 +8419,7 @@ input.main-search-input::placeholder {
 }
 .blog-card.style1 .body h3 a {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -8498,7 +8506,7 @@ input.main-search-input::placeholder {
 }
 .blog-card.style2 .blog-card-body .blog-title a {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -8514,7 +8522,7 @@ input.main-search-input::placeholder {
 }
 .blog-card.style2 .blog-card-body .btn-wrapper a {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -8527,7 +8535,7 @@ input.main-search-input::placeholder {
 .blog-card.style2 .blog-card-body .btn-wrapper img,
 .blog-card.style2 .blog-card-body .btn-wrapper i {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -8556,7 +8564,7 @@ input.main-search-input::placeholder {
   padding: 10px 18px;
   color: var(--white);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -8573,7 +8581,7 @@ input.main-search-input::placeholder {
 .blog-card.style2 .calendar .month {
   color: var(--text);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
@@ -8847,7 +8855,7 @@ input.main-search-input::placeholder {
 }
 .news-standard-wrapper .news-standard-items .news-thumb .post-date h3 {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   text-align: center;
   font-size: 24px;
   font-style: normal;
@@ -8857,7 +8865,7 @@ input.main-search-input::placeholder {
 }
 .news-standard-wrapper .news-standard-items .news-thumb .post-date h3 span {
   color: var(--white);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -8884,7 +8892,7 @@ input.main-search-input::placeholder {
 }
 .news-standard-wrapper .news-standard-items .news-content ul li {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -8899,7 +8907,7 @@ input.main-search-input::placeholder {
 }
 .news-standard-wrapper .news-standard-items .news-content h3 a {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -9036,7 +9044,7 @@ input.main-search-input::placeholder {
   display: inline-flex;
   padding: 10px 16px;
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -9097,7 +9105,7 @@ input.main-search-input::placeholder {
   font-size: 32px;
   font-weight: 500;
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -9138,7 +9146,7 @@ input.main-search-input::placeholder {
   h5
   a {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -9262,7 +9270,7 @@ input.main-search-input::placeholder {
 }
 .service-box.style1 .content h3 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -9272,7 +9280,7 @@ input.main-search-input::placeholder {
 }
 .service-box.style1 .content .text {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -9311,7 +9319,7 @@ input.main-search-input::placeholder {
 }
 .service-box.style3 .content h3 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -9321,7 +9329,7 @@ input.main-search-input::placeholder {
 }
 .service-box.style3 .content .text {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -9390,7 +9398,7 @@ input.main-search-input::placeholder {
 }
 .service-wrapper.style3 h2 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -9408,7 +9416,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .title {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -9437,7 +9445,7 @@ input.main-search-input::placeholder {
   border-radius: 100px;
   border: 1px solid rgba(30, 41, 46, 0.15);
   color: var(--Primary-Font-Color, #282c32);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -9449,7 +9457,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-box1 .subtitle {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -9465,7 +9473,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-box1 .text {
   color: var(--border-5);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9478,7 +9486,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-box2 .subtitle {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -9494,7 +9502,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-box2 .text {
   color: var(--border-5);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9519,7 +9527,7 @@ input.main-search-input::placeholder {
 .service-details-wrapper .details-box2 .feature-wrapper ul li {
   list-style-type: disc;
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9551,7 +9559,7 @@ input.main-search-input::placeholder {
 .service-details-wrapper .details-box2 .progress-wrap .progress-meta .title {
   margin-top: 0;
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -9567,7 +9575,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-box2 .text1 {
   color: var(--border-5);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9575,7 +9583,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-box2 .text2 {
   color: var(--border-5);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9628,7 +9636,7 @@ input.main-search-input::placeholder {
 }
 .project-card.style1 .project-content h3 a {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -9636,7 +9644,7 @@ input.main-search-input::placeholder {
 }
 .project-card.style1 .text {
   color: var(--theme);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -9664,7 +9672,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .single-desc .single-desc-title {
   color: #282c32;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -9674,7 +9682,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .single-desc .text1 {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9684,7 +9692,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .single-desc .text2 {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9715,7 +9723,7 @@ input.main-search-input::placeholder {
   .tesimonial-content
   .text3 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -9729,7 +9737,7 @@ input.main-search-input::placeholder {
   .tesimonial-content
   .testimonial-author {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -9743,7 +9751,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .single-desc2 .single-desc-title {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -9753,7 +9761,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .single-desc2 .text1 {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9763,7 +9771,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .single-desc2 .text2 {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9809,7 +9817,7 @@ input.main-search-input::placeholder {
 .team-card.style1 .team-card-content h3 a {
   color: var(--title);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -9818,7 +9826,7 @@ input.main-search-input::placeholder {
 .team-card.style1 .designation {
   color: var(--title);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -9873,7 +9881,7 @@ input.main-search-input::placeholder {
 }
 .team-details-wrap .team-details-content .details-info .profile h3 {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -9884,7 +9892,7 @@ input.main-search-input::placeholder {
 }
 .team-details-wrap .team-details-content .details-info .profile span {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -9966,7 +9974,7 @@ input.main-search-input::placeholder {
 }
 .team-simple-history .title {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -9985,7 +9993,7 @@ input.main-search-input::placeholder {
 }
 .team-simple-history .skills > .title {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -9999,7 +10007,7 @@ input.main-search-input::placeholder {
 }
 .team-simple-history .skills .progress-wrap .progress-meta .title {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -10180,7 +10188,7 @@ input.main-search-input::placeholder {
   ul
   li {
   color: var(--theme);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -10214,7 +10222,7 @@ input.main-search-input::placeholder {
   h6
   a {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -10233,7 +10241,7 @@ input.main-search-input::placeholder {
   display: inline-flex;
   padding: 10px 16px;
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -10283,7 +10291,7 @@ input.main-search-input::placeholder {
   font-size: 18px;
   line-height: 1.25;
   margin: 10px 0 0px;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   text-transform: capitalize;
 }
 .recent-post .recent-post-meta {
@@ -10348,7 +10356,7 @@ input.main-search-input::placeholder {
   color: var(--text);
   font-size: 16px;
   font-weight: 500;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-weight: 600;
   color: var(--title);
   margin-bottom: 6px;
@@ -10385,10 +10393,10 @@ input.main-search-input::placeholder {
   margin-top: 20px;
   font-size: 18px;
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
 }
 .widget_shopping_cart .total strong {
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
 }
 .widget_shopping_cart .amount {
   padding-left: 5px;
@@ -10448,7 +10456,7 @@ input.main-search-input::placeholder {
   margin-bottom: 10px;
   color: var(--title);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -10460,7 +10468,7 @@ input.main-search-input::placeholder {
 .contact-info-box.style1 .contact-content .text {
   color: var(--text);
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -10502,7 +10510,7 @@ input.main-search-input::placeholder {
 
 .contact-form.style1 .contact-title {
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -10511,7 +10519,7 @@ input.main-search-input::placeholder {
 }
 .contact-form.style1 .desc {
   color: var(--text);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -10556,7 +10564,7 @@ input {
   background-color: transparent;
   font-size: 16px;
   width: 100%;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   transition: 0.4s ease-in-out;
   border-radius: 0px;
 }
@@ -10879,7 +10887,7 @@ label {
   margin-top: -0.3em;
   display: block;
   color: var(--title);
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
 }
 
@@ -11014,7 +11022,7 @@ textarea.is-invalid {
 .technology-box-items.style-4 .title {
   color: var(--body-text2, rgba(38, 37, 46, 0.7));
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -11954,7 +11962,7 @@ textarea.is-invalid {
   color: var(--title);
   box-shadow: none;
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Kodchasan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -12292,5 +12300,202 @@ textarea.is-invalid {
   position: relative;
 }
 
-
 /* Shimmer */
+
+/* Competitor table */
+.comparison-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #1e293b;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.highlight {
+  color: #3b82f6;
+  position: relative;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.table-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05),
+    0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th {
+  background-color: #f8fafc;
+  padding: 1.25rem 1.5rem;
+  font-weight: 600;
+  text-align: left;
+  color: #475569;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.feature-header {
+  width: 30%;
+  font-weight: 700;
+  color: #0f172a;
+  border-right: 1px solid #e2e8f0;
+}
+
+.markops-column {
+  background-color: rgba(59, 130, 246, 0.05) !important;
+  color: #2563eb;
+  font-weight: 700;
+  position: relative;
+}
+
+.markops-column::before {
+  content: "★";
+  margin-right: 6px;
+  color: #f59e0b;
+}
+
+.comparison-table td {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.feature-name {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.even-row td {
+  background-color: #ffffff;
+}
+
+.odd-row td {
+  background-color: #f8fafc;
+}
+
+.markops-cell {
+  background-color: rgba(16, 185, 129, 0.05) !important;
+  position: relative;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-wrapper.success {
+  color: #10b981;
+  font-weight: 500;
+}
+
+.icon-wrapper.error {
+  color: #ef4444;
+}
+
+.markops-feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.feature-tag {
+  background: #10b981;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 20px;
+  margin-left: auto;
+}
+
+.summary-section {
+  margin-top: 3rem;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+.summary-card h3 {
+  color: #0f172a;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+}
+
+.summary-card ul {
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.summary-card li {
+  margin-bottom: 0.75rem;
+  color: #334155;
+  position: relative;
+}
+
+.summary-card li::marker {
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .feature-header {
+    width: 40%;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 1rem;
+  }
+
+  .feature-tag {
+    display: none;
+  }
+}

@@ -16,6 +16,7 @@ import {
 } from "../utils/utils";
 import useHome from "../hooks/useHome";
 import HomeShimmerEffect from "../Components/Shimmer/HomeShimmerEffect";
+import CompetitorComparison from "../Components/CompetitorComparison/CompetitorComparison";
 
 const Home = () => {
   const { data, loading, error } = useHome();
@@ -117,6 +118,7 @@ const Home = () => {
       <Faq1 faqData={faqData} />
       <Testimonial td={td} />
       <Pricing1 pricing={pricing} />
+      <CompetitorComparison />
       <Blog1 blogs={blogs} />
     </div>
   );
