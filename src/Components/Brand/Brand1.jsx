@@ -54,8 +54,12 @@ const Brand1 = ({ client }) => {
                         <div key={item.id} className="swiper-slide">
                           <div className="brand-logo">
                             <img
-                              src={`https://teal-sparrow-187679.hostingersite.com/public/uploads/clients/${item.image}`}
-                              alt="logo"
+                              src={`https://markopsadmin.markops.io/public/uploads/clients/${item.image}`}
+                              alt="Client Logo"
+                              style={{
+                                filter: "grayscale(100%)",
+                                opacity: 0.8,
+                              }}
                             />
                           </div>
                         </div>

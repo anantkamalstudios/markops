@@ -17,16 +17,11 @@ export default function FilterSection() {
   const [formState, setFormState] = useState({
     selectedTab: "ads",
     query: "",
-    timeFrom: "",
     timeTo: "",
-    onlyNew: false,
     original: false,
     dynamic: false,
     timeFrom: "",
-    timeTo: "",
     onlyNew: false,
-    original: false,
-    dynamic: false,
     facebook: false,
     instagram: false,
     youtube: false,
@@ -54,7 +49,7 @@ export default function FilterSection() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
   };
 
   const toggleNetwork = (id) => {
@@ -71,14 +66,14 @@ export default function FilterSection() {
 
   const toggleLanguage = (lang) => {
     setSelectedLanguages((prev) =>
-      prev.includes(lang) ? prev.filter((l) => l !== lang) : [...prev, lang]
+      prev.includes(lang) ? prev.filter((l) => l !== lang) : [...prev, lang],
     );
   };
   const toggleCountry = (country) => {
     setSelectedCountries((prev) =>
       prev.includes(country)
         ? prev.filter((c) => c !== country)
-        : [...prev, country]
+        : [...prev, country],
     );
   };
 

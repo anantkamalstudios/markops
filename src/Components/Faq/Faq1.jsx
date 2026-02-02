@@ -12,8 +12,8 @@ const Faq1 = ({ faqData }) => {
     setOpenItemIndex(index === openItemIndex ? -1 : index);
   };
 
-  const smallImage = `https://teal-sparrow-187679.hostingersite.com/public/${mainContent.image1}`;
-  const largeImage = `https://teal-sparrow-187679.hostingersite.com/public/${mainContent.image2}`;
+  const smallImage = `https://markopsadmin.markops.io/public/${mainContent.image1}`;
+  const largeImage = `https://markopsadmin.markops.io/public/${mainContent.image2}`;
 
   return (
     <section className="faq-section section-padding fix">

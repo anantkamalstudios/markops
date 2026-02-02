@@ -50,9 +50,18 @@ button {
   padding: 0;
 }
 
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--theme);
+  outline-offset: 2px;
+}
+
 input:focus {
   color: var(--text);
   outline: none;
+  border-color: var(--theme);
 }
 
 input::placeholder {
@@ -2486,7 +2495,11 @@ input[type="radio"]:checked ~ label::before {
   }
 }
 .preloader .animation-preloader .txt-loading {
-  font: bold 5em "Urbanist", sans-serif, "Urbanist", sans-serif;
+  font:
+    bold 5em "Urbanist",
+    sans-serif,
+    "Urbanist",
+    sans-serif;
   text-align: center;
   user-select: none;
 }
@@ -3480,12 +3493,21 @@ input[type="radio"]:checked ~ label::before {
   height: 6px;
   z-index: 10000001;
   background-color: var(--theme2);
-  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
-    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  -o-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
-    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
-    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -webkit-transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    margin 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  -o-transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    margin 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    margin 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
 }
 .cursor-inner.cursor-hover {
   margin-left: -35px;
@@ -3765,7 +3787,7 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 575px) {
   .section-padding {
-    padding: 60px 0;
+    padding: 130px 0;
   }
 }
 
@@ -5075,9 +5097,15 @@ input.main-search-input::placeholder {
   -ms-transform: translateX(calc(100% + 80px));
   -o-transform: translateX(calc(100% + 80px));
   transform: translateX(calc(100% + 80px));
-  -webkit-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  -moz-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+  -webkit-transition:
+    transform 0.45s ease-in-out,
+    opacity 0.45s ease-in-out;
+  -moz-transition:
+    transform 0.45s ease-in-out,
+    opacity 0.45s ease-in-out;
+  transition:
+    transform 0.45s ease-in-out,
+    opacity 0.45s ease-in-out;
   z-index: 99999;
   overflow-y: scroll;
   overscroll-behavior-y: contain;
@@ -6215,12 +6243,12 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 1199px) {
   .intro-wrapper.style1 .intro-content {
-    padding: 120px 0;
+    padding: 0px 0;
   }
 }
 @media (max-width: 767px) {
   .intro-wrapper.style1 .intro-content {
-    padding: 80px 0;
+    padding: 0px 0;
   }
 }
 .intro-wrapper.style1 .intro-content .intro-section-title .intro-subtitle {
@@ -6665,7 +6693,7 @@ input.main-search-input::placeholder {
 /* 18.About */
 .about-wrapper.style1 .about-thumb {
   position: relative;
-  padding-bottom: 70px;
+  padding-bottom: 125px;
 }
 .about-wrapper.style1 .about-thumb .bg {
   position: absolute;
@@ -6698,7 +6726,7 @@ input.main-search-input::placeholder {
   position: absolute;
   top: -10px;
   left: -20px;
-  z-index: 1;
+  z-index: 999;
 }
 .about-wrapper.style1 .about-thumb .thumbShape4 {
   position: absolute;
@@ -7574,7 +7602,6 @@ input.main-search-input::placeholder {
   -o-border-radius: 6px;
 }
 .testimonial-card.style1 .testimonial-header .content h5 {
-  color: "Urbanist", sans-serif;
   font-family: var(--title);
   font-size: 24px;
   font-style: normal;
@@ -8197,6 +8224,7 @@ input.main-search-input::placeholder {
 }
 
 .pricing-wrapper.style1 {
+  padding: 1rem;
   position: relative;
   z-index: 5;
 }
@@ -8381,9 +8409,12 @@ input.main-search-input::placeholder {
 }
 
 .blog-card.style1:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
   transform: scale(1.05);
 }
 
@@ -11013,7 +11044,8 @@ textarea.is-invalid {
   padding: 15px 15px;
   border-radius: 16px;
   background: var(--white);
-  box-shadow: 0px 4px 8px -2px rgba(45, 54, 67, 0.08),
+  box-shadow:
+    0px 4px 8px -2px rgba(45, 54, 67, 0.08),
     0px 2px 4px -2px rgba(45, 54, 67, 0.06);
 }
 .technology-box-items.style-4 .logo {
@@ -11621,7 +11653,7 @@ textarea.is-invalid {
   .cs_nav .cs_nav_list {
     position: absolute;
     width: 100vw;
-    left: -15px;
+    left: -25px;
     background-color: #181818;
     padding: 10px 0;
     display: none;
@@ -11685,7 +11717,7 @@ textarea.is-invalid {
     transition-delay: 0.2s, 0s;
   }
   .cs_site_header.cs_style_1 .cs-munu_toggle {
-    top: 50%;
+    top: 60%;
     right: 0px;
     margin-top: -13px;
     color: #000;
@@ -11907,7 +11939,7 @@ textarea.is-invalid {
     height: 90px;
   }
   .cs_site_header.cs_style_1 {
-    top: 30px;
+    top: 0px;
   }
   .cs_site_header_spacing_140 {
     height: 90px;
@@ -12244,7 +12276,7 @@ textarea.is-invalid {
   margin-bottom: 3rem;
 }
 .legal-heading h1 {
-  font-size: 68px;
+  font-size: 60px;
 }
 
 /* Tool Card */
@@ -12353,7 +12385,8 @@ textarea.is-invalid {
 .table-container {
   background: white;
   border-radius: 16px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05),
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.05),
     0 8px 10px -6px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
@@ -12459,7 +12492,8 @@ textarea.is-invalid {
   background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
     0 2px 4px -2px rgba(0, 0, 0, 0.05);
 }
 
@@ -12506,7 +12540,9 @@ textarea.is-invalid {
 }
 
 .feature-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   border-radius: 12px;
   min-height: 300px;
 }

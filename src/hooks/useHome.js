@@ -8,7 +8,7 @@ function useHome() {
 
   useEffect(() => {
     axios
-      .get("https://teal-sparrow-187679.hostingersite.com/api/cms/home")
+      .get("https://markopsadmin.markops.io/api/cms/home")
       .then((response) => {
         setData(response.data.data);
         setLoading(false);

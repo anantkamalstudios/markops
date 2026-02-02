@@ -35,8 +35,8 @@ const Feature1 = ({ featuresData }) => {
                         <img
                           src={
                             item.icon.startsWith("uploads/")
-                              ? `https://teal-sparrow-187679.hostingersite.com/public/${item.icon}`
-                              : "/assets/images/icon/default.svg"
+                              ? `https://markopsadmin.markops.io/public/${item.icon}`
+                              : item.icon
                           }
                           alt={item.title}
                           style={{
@@ -50,25 +50,26 @@ const Feature1 = ({ featuresData }) => {
                       </div>
 
                       <div className="mt-2">
-                        <p>
-                          {item.description
-                            .split("•")
-                            .map((point) => point.trim())
-                            .filter((point) => point.length > 0)
-                            .map((point, index) => (
-                              <div
-                                key={index}
-                                className="mb-1"
-                                style={{ fontSize: "16px" }}
-                              >
-                                <i
-                                  className="fa-regular fa-circle-check me-2"
-                                  style={{ color: "#875efd" }}
-                                ></i>
-                                {point}
-                              </div>
-                            ))}
-                        </p>
+                        <div>
+                          {item.description &&
+                            item.description
+                              .split(/[\r\n•]+/)
+                              .map((point) => point.trim())
+                              .filter((point) => point.length > 0)
+                              .map((point, index) => (
+                                <div
+                                  key={index}
+                                  className="mb-1"
+                                  style={{ fontSize: "16px" }}
+                                >
+                                  <i
+                                    className="fa-regular fa-circle-check me-2"
+                                    style={{ color: "#875efd" }}
+                                  ></i>
+                                  {point}
+                                </div>
+                              ))}
+                        </div>
                       </div>
                     </div>
                   </div>

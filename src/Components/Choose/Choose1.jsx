@@ -98,7 +98,7 @@ const Choose1 = ({
                       data-tilt-max="10"
                     >
                       <img
-                        src={`https://teal-sparrow-187679.hostingersite.com/public/${img}`}
+                        src={`https://markopsadmin.markops.io/public/${img}`}
                         alt="thumb"
                         className="choose-1-img"
                       />

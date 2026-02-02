@@ -7,11 +7,14 @@ const Testimonial = ({ td }) => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 2000,
+    speed: 5000,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     swipeToSlide: true,
+    draggable: true,
+    swipe: true,
+    touchMove: true,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
@@ -41,7 +44,7 @@ const Testimonial = ({ td }) => {
       <div className="testimonial-container-wrapper style1">
         <div className="container">
           <div className="testimonial-wrapper style1 section-padding fix">
-            <div className="shape1">
+            {/* <div className="shape1">
               <img
                 src="/assets/images/shape/testimonialShape1_1.png"
                 alt="shape"
@@ -52,7 +55,7 @@ const Testimonial = ({ td }) => {
                 src="/assets/images/shape/testimonialShape1_2.png"
                 alt="shape"
               />
-            </div>
+            </div> */}
             <div className="container">
               <div className="section-title text-center mxw-685 mx-auto">
                 <SectionTitle
@@ -70,7 +73,7 @@ const Testimonial = ({ td }) => {
                             <div className="testimonial-header">
                               <div className="profile-thumb">
                                 <img
-                                  src={`https://teal-sparrow-187679.hostingersite.com/public/${item.image}`}
+                                  src={`https://markopsadmin.markops.io/public/${item.image}`}
                                   alt="thumb"
                                   style={{
                                     width: "65px",

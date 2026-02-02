@@ -7,6 +7,9 @@ export default function Nav({ setMobileToggle }) {
       <li className="">
         <Link to="/">Home</Link>
       </li>
+      <li className="">
+        <Link to="/about-us">About Us</Link>
+      </li>
       <li className="menu-item-has-children">
         <Link to="#">AdSpy</Link>
         <DropDown>

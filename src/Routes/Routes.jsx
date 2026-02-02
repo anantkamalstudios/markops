@@ -134,6 +134,10 @@ export const router = createBrowserRouter([
         element: <FaqPage></FaqPage>,
       },
       {
+        path: "/about-us",
+        element: <AboutPage></AboutPage>,
+      },
+      {
         path: "/terms-conditions",
         element: <TermCondition></TermCondition>,
       },

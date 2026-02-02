@@ -23,7 +23,7 @@ const Blog1 = ({ blogs }) => {
                 >
                   <div className="thumb">
                     <img
-                      src={`https://teal-sparrow-187679.hostingersite.com/public/${blog.image}`}
+                      src={`https://markopsadmin.markops.io/public/${blog.image}`}
                       alt={blog.title}
                     />
                   </div>
@@ -64,7 +64,7 @@ const Blog1 = ({ blogs }) => {
                               year: "numeric",
                               month: "short",
                               day: "numeric",
-                            }
+                            },
                           )}
                         </span>
                       </div>
@@ -73,6 +73,9 @@ const Blog1 = ({ blogs }) => {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-5 wow fadeInUp" data-wow-delay=".4s">
+             <Link to="/blog" className="theme-btn">Read More Resources</Link>
           </div>
         </div>
       </div>

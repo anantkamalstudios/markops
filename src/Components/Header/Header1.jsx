@@ -38,21 +38,12 @@ export default function Header1({ variant }) {
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding" to="/">
-                  <img
-                    src="/dark-logo.png"
-                    alt="Logo"
-                    className=""
-                    style={{
-                      width: "250px",
-                      padding: "15%",
-                      height: "150px",
-                    }}
-                  />
+                  <img src="/dark-logo.png" alt="Logo" className="" />
                   {/* <h1>MarkOps</h1> */}
                 </Link>
               </div>
               <div className="cs_main_header_center">
-                <div className="cs_nav cs_primary_font fw-medium">
+                <nav className="cs_nav cs_primary_font fw-medium">
                   <span
                     className={
                       mobileToggle
@@ -64,7 +55,7 @@ export default function Header1({ variant }) {
                     <span></span>
                   </span>
                   <Nav setMobileToggle={setMobileToggle} />
-                </div>
+                </nav>
               </div>
               <div className="cs_main_header_right">
                 <div className="header-btn d-flex align-items-center">
@@ -76,12 +67,12 @@ export default function Header1({ variant }) {
                   </a>
                   <div className="header-button ms-4">
                     <Link
-                      to="https://teal-sparrow-187679.hostingersite.com/login"
+                      to="https://markopsadmin.markops.io/login"
                       className="theme-btn"
                     >
                       <span>
                         Login
-                        <i class="bi bi-door-open"></i>
+                        <i className="bi bi-door-open"></i>
                       </span>
                     </Link>
                   </div>

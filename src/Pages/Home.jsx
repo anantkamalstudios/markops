@@ -17,6 +17,8 @@ import {
 import useHome from "../hooks/useHome";
 import CompetitorComparison from "../Components/CompetitorComparison/CompetitorComparison";
 import { CircleLoader } from "react-spinners";
+import FeatureTable from "../Components/FeatureTable/FeatureTable";
+import Reveal from "../Components/Common/Reveal";
 
 const Home = () => {
   const { data, loading, error } = useHome();
@@ -42,7 +44,7 @@ const Home = () => {
   const brand = data.Client;
   const choose1 = data.performance[0];
   const { content, featureList1, featureList2 } = extractContentFromDescription(
-    choose1.description
+    choose1.description,
   );
 
   const counters = data.TrackModel;
@@ -56,79 +58,76 @@ const Home = () => {
 
   return (
     <div>
-      {/* <HeroBanner1
-        subtitle="<span>Hello!</span>Find Your Solution"
-        title="All-in-One Ad Intelligence Platform"
-        content="Unlock competitor strategies with MarkOps — your ultimate ad library across 9+ platforms. Discover what’s working, track trends, and fuel your next winning campaign."
-        subContent="
-        ✔️ Cross-Platform Ad Library  
-        ✔️ Real-Time Competitor Monitoring  
-        ✔️ Deep Market & Audience Insights
-        "
-        btnname="Start Tracking Now"
-        btnurl="/contact"
-        btntwo="Explore Features"
-        btn2url="/google-page"
-        cusnumber="2,291"
-        cuscontent="Trusted Users"
-        rating="4.8/5"
-        ratingcon="Average Rating"
-        img="/assets/images/hero/hero_image.png"
-      ></HeroBanner1>
-       <Choose1
-        subtitle="Performance Marketing Tool"
-        title={choose1.title}
-        content="Unlock the full potential of your campaigns with our data-driven marketing app. From lead generation to conversion tracking, our tool helps you scale faster, reach the right audience, and boost ROI — all in one platform."
-        FeatureList={["User-Friendly Interface", "SEO-Optimized Campaigns"]}
-        FeatureList2={["Cloud-Based Access", "Advanced Data Security"]}
-        btnname="Download App"
-        btnurl="/about"
-      ></Choose1>
-      <Feature2></Feature2> */}
-
-      <HeroBanner1
-        subtitle="<span>Hello!</span>Find Your Solution"
-        title={hero.title}
-        content={hero.paragraph}
-        btnname={hero.button_1_text}
-        btnurl={hero.button_1_url}
-        btntwo={hero.button_2_text}
-        btn2url={hero.button_2_url}
-        img={`https://teal-sparrow-187679.hostingersite.com/public/${hero.image}`}
-        cusnumber="2,291"
-        cuscontent="Trusted Users"
-        rating="4.8/5"
-        ratingcon="Average Rating"
-      />
-      <Brand1 client={brand} />
-      {data.about && data.about[0] && (
-        <About1
-          img1={`https://teal-sparrow-187679.hostingersite.com/public/${data.about[0].image}`}
-          img2="/assets/images/about/aboutThumb1_2.png"
-          subtitle="About Our App"
-          title={data.about[0].title}
-          content={stripHtml(data.about[0].description)}
-          FeatureList={extractListItems(data.about[0].description)}
-          btnname="Discover More"
-          btnurl=""
+      <Reveal>
+        <HeroBanner1
+          subtitle="<span>Hello!</span>Find Your Solution"
+          title={hero.title}
+          content={hero.paragraph}
+          btnname={hero.button_1_text}
+          btnurl={hero.button_1_url}
+          btntwo={hero.button_2_text}
+          btn2url={hero.button_2_url}
+          img={`https://markopsadmin.markops.io/public/${hero.image}`}
+          cusnumber="2,291"
+          cuscontent="Trusted Users"
+          rating="4.8/5"
+          ratingcon="Average Rating"
         />
+      </Reveal>
+      <Reveal delay={0.2}>
+        <Brand1 client={brand} />
+      </Reveal>
+      {data.about && data.about[0] && (
+        <Reveal>
+          <About1
+            img1={`https://markopsadmin.markops.io/public/${data.about[0].image}`}
+            img2="/assets/images/about/aboutThumb1_2.png"
+            subtitle="About Our App"
+            title={data.about[0].title}
+            content={stripHtml(data.about[0].description)}
+            FeatureList={extractListItems(data.about[0].description)}
+            btnname="Discover More"
+            btnurl=""
+          />
+        </Reveal>
       )}
-      <HowWork howItWorkData={howItWorkData} />
-      <Choose1
-        subtitle="Performance Marketing Tool"
-        img={choose1.image}
-        title={choose1.title}
-        content={content}
-        FeatureList={featureList1}
-        FeatureList2={featureList2}
-      />
-      <Feature1 featuresData={featuresData} />
-      <Counter1 counters={counters}></Counter1>
-      <Faq1 faqData={faqData} />
-      <Testimonial td={td} />
-      <Pricing1 pricing={pricing} />
-      <CompetitorComparison competitor={competitor} />
-      <Blog1 blogs={blogs} />
+      <Reveal>
+        <HowWork howItWorkData={howItWorkData} />
+      </Reveal>
+      <Reveal>
+        <Choose1
+          subtitle="Performance Marketing Tool"
+          img={choose1.image}
+          title={choose1.title}
+          content={content}
+          FeatureList={featureList1}
+          FeatureList2={featureList2}
+        />
+      </Reveal>
+      <Reveal>
+        <Feature1 featuresData={featuresData} />
+      </Reveal>
+      <Reveal>
+        <Counter1 counters={counters}></Counter1>
+      </Reveal>
+      <Reveal>
+        <Faq1 faqData={faqData} />
+      </Reveal>
+      <Reveal>
+        <Testimonial td={td} />
+      </Reveal>
+      <Reveal>
+        <Pricing1 pricing={pricing} />
+      </Reveal>
+      <Reveal>
+        <CompetitorComparison competitor={competitor} />
+      </Reveal>
+      <Reveal>
+        <FeatureTable />
+      </Reveal>
+      <Reveal>
+        <Blog1 blogs={blogs} />
+      </Reveal>
     </div>
   );
 };

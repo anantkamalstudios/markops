@@ -48,7 +48,7 @@ const BlogStandard = () => {
                   >
                     <div className="news-thumb">
                       <img
-                        src={`https://teal-sparrow-187679.hostingersite.com/public/${blog.image}`}
+                        src={`https://markopsadmin.markops.io/public/${blog.image}`}
                         alt={blog.title}
                       />
                       <div className="post-date">

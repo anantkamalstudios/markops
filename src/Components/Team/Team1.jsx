@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import data from '../../Data/team1.json';
+import teamData from '../../Data/team1.json';
 
-const Team1 = () => {
+const Team1 = ({ data = teamData }) => {
     return (
 <section className="team-page-section section-padding fix">
         <div className="team-page-container-wrapper style1">

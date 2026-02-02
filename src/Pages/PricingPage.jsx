@@ -1,5 +1,6 @@
 import BreadCumb from "../Components/Common/BreadCumb";
 import CompetitorComparison from "../Components/CompetitorComparison/CompetitorComparison";
+import FeatureTable from "../Components/FeatureTable/FeatureTable";
 import Loader from "../Components/Loader";
 import Pricing1 from "../Components/Pricing/Pricing1";
 import useHome from "../hooks/useHome";
@@ -18,6 +19,8 @@ const PricingPage = () => {
     <div>
       <Pricing1 pricing={pricing} />
       <CompetitorComparison competitor={competitor} />
+      
+      <FeatureTable />
     </div>
   );
 };

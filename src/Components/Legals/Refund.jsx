@@ -9,59 +9,102 @@ const Refund = () => {
       </div>
       <div className="container">
         <div className="mb-4">
-          <h5 className="fw-semibold">Acceptance of Refund Policy</h5>
+          <h5 className="fw-semibold">MarkOps Refund Policy</h5>
           <p>
-            By subscribing to MarkOps, you agree to this Refund Policy. We aim
-            to provide high-quality services and transparency in all
-            transactions. Refunds are only considered in limited, exceptional
-            cases.
+            As a SaaS provider, all products and services offered by Markops are
+            non-tangible and irrevocable. Therefore, we do not issue refunds
+            once an order is completed and delivered. We encourage you to
+            carefully read the terms and understand our product before making
+            any payment.
           </p>
         </div>
 
         <div className="mb-4">
-          <h5 className="fw-semibold">
-            In Rare Cases, We ACCEPT Refund Requests For the Following Reasons
-            ONLY:
-          </h5>
-          <ul className="ps-3">
-            <li>You were charged more than once for the same subscription.</li>
+          <h5 className="fw-semibold">1. Acceptance of Refund Policy</h5>
+          <p>
+            It is highly recommended to review the functionality and features of
+            our product before placing an order to avoid refund requests.
+          </p>
+          <p>
+            By ordering our products, you confirm that you have read and fully
+            accept this refund policy.
+          </p>
+          <p>
+            If you do not agree with this policy, please contact us to share
+            your comments, suggestions, or concerns.
+          </p>
+          <p>
+            For any request or general query, please allow up to 48 hours for a
+            response.
+          </p>
+        </div>
+
+        <div className="mb-4">
+          <h5 className="fw-semibold">2. Rare Refund Circumstances</h5>
+          <p>Refunds are only considered in the following cases:</p>
+          <ul>
+            <li>Errors occur due to a system bug.</li>
             <li>
-              You experienced a complete service outage (verified by our support
-              team).
+              Users request a refund within 24 hours of their first payment.
             </li>
-            <li>You cancelled before renewal but were still billed.</li>
           </ul>
-          <p className="text-muted mt-2">
-            <strong>Note:</strong> Refunds are not offered for user
-            dissatisfaction, unused time, or incorrect plan selection.
+          <p>
+            <strong>Notes:</strong>
+          </p>
+          <ul>
+            <li>
+              First payment refers to the initial payment for a new account; it
+              does not include renewals, plan upgrades, or repurchases.
+            </li>
+            <li>
+              Please provide thorough and supported reasons for the refund
+              request.
+            </li>
+            <li>
+              Refunds are not guaranteed for lack of usage or dissatisfaction.
+            </li>
+          </ul>
+        </div>
+
+        <div className="mb-4">
+          <h5 className="fw-semibold">3. Subscription Terms</h5>
+          <p>
+            Your subscription begins as soon as your initial payment is
+            processed.
+          </p>
+          <p>
+            Subscriptions automatically renew at the end of each period until
+            canceled.
+          </p>
+          <p>
+            By subscribing, you authorize us to store your payment method and
+            automatically charge it for each renewal period.
           </p>
         </div>
 
         <div className="mb-4">
-          <h5 className="fw-semibold">Subscription Terms</h5>
+          <h5 className="fw-semibold">4. Cancellation Terms</h5>
           <p>
-            All MarkOps subscriptions renew automatically unless cancelled
-            before the billing date. You can manage or cancel your subscription
-            from your account settings.
+            You may cancel your subscription at any time via Profile → My Plan →
+            "Cancel Subscription" or by contacting our customer service before
+            the next renewal.
+          </p>
+          <p>
+            Cancellation is effective at the end of the current paid period. No
+            refund will be issued for the current period, and you may continue
+            using the subscription until the cancellation takes effect.
           </p>
         </div>
 
         <div className="mb-4">
-          <h5 className="fw-semibold">Cancellation Terms</h5>
-          <p>
-            Cancellation of your plan stops future billing. Access to premium
-            features will remain active until the current billing cycle ends. No
-            partial refunds are provided for unused time.
-          </p>
-        </div>
-
-        <div>
-          <h5 className="fw-semibold">Contact Us</h5>
-          <p>
-            If you believe you’re eligible for a refund or have questions,
-            please contact us at <strong>support@markops.io</strong>. Our team
-            will respond within 2–3 business days.
-          </p>
+          <h5 className="fw-semibold">5. Contact Us</h5>
+          <p>For refund requests or questions, contact us:</p>
+          <ul>
+            <li>
+              Email: <a href="mailto:support@markops.io">support@markops.io</a>
+            </li>
+            <li>Phone: +91 96734 58567</li>
+          </ul>
         </div>
       </div>
     </section>

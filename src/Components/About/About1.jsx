@@ -67,10 +67,10 @@ const About1 = ({
                     />
                   </div>
                   <div className="main-thumb">
-                    <img src={img1} alt="thumb" />
+                    <img src={img1} alt="About MarkOps" />
                   </div>
                   <div className="absolute-thumb float-bob-x">
-                    <img src={img2} alt="thumb" />
+                    <img src={img2} alt="About MarkOps Overlay" />
                   </div>
                 </div>
               </div>
